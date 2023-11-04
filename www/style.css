@@ -1,0 +1,14 @@
+h1, h2 {
+  text-align: right;
+}
+
+h1 {
+  font-family: Clara, Sans-Serif;
+  font-weight: bold;
+}
+
+
+
+body {
+  background-color: "red";
+}

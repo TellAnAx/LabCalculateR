@@ -1,12 +1,23 @@
 # Define UI for application that draws a histogram
 ui <- fluidPage(
   
-  # Application title
-  titlePanel("Calculation of calibration standard concentrations"),
+  tags$head(
+    tags$link(rel = "stylesheet", type = "text/css", href = "style.css")
+  ),
   
-  # Sidebar with a slider input for number of bins 
-  sidebarLayout(
-    sidebarPanel(
+  # ROW 1
+  fluidRow(
+    column(width = 4,
+           tags$img(src="frov_logo.jpg")
+    ),
+    column(width = 8,
+           tags$h1("Calculation of calibration standard concentrations")
+    )
+  ),
+  
+  fluidRow(
+    column(width = 4,
+           tags$h3("Necessary information"),
     numericInput("conc_lowest",
                  "Lowest concentration [mg/L]",
                  value = 10),
@@ -26,7 +37,7 @@ ui <- fluidPage(
                 max = 10)
   ),
     # Show a plot of the generated distribution
-    mainPanel(
+    column(8,
       tableOutput("resultTable"),
       plotOutput("resultPlot")
     )
