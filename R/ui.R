@@ -31,5 +31,5 @@ ui <- fluidPage(
       )
   ),
   
-  tags$footer("written by Anıl A. Tellbüscher. Contact for troubleshooting: admin@tellbuescher.online")
+  tags$footer("written by Anil A. Tellbuescher. Contact for troubleshooting: admin@tellbuescher.online")
 )
