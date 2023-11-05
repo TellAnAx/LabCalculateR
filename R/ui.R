@@ -1,23 +1,12 @@
 # Define UI for application that draws a histogram
 ui <- fluidPage(
   
-  tags$head(
-    tags$link(rel = "stylesheet", type = "text/css", href = "style.css")
-  ),
+  tags$h1("Equidistant calibration"),
+  tags$h2("Calculation of dilution series"),
   
-  # ROW 1
-  fluidRow(
-    column(width = 4,
-           tags$img(src="frov_logo.jpg")
-    ),
-    column(width = 8,
-           tags$h1("Calculation of calibration standard concentrations")
-    )
-  ),
-  
-  fluidRow(
-    column(width = 4,
-           tags$h3("Necessary information"),
+  sidebarLayout(
+    sidebarPanel(
+      tags$h3("Data input"),
     numericInput("conc_lowest",
                  "Lowest concentration [mg/L]",
                  value = 10),
@@ -36,10 +25,11 @@ ui <- fluidPage(
                 min = 1,
                 max = 10)
   ),
-    # Show a plot of the generated distribution
-    column(8,
+    mainPanel(
       tableOutput("resultTable"),
       plotOutput("resultPlot")
-    )
-  )
+      )
+  ),
+  
+  tags$footer("written by Anıl A. Tellbüscher. Contact for troubleshooting: admin@tellbuescher.online")
 )
