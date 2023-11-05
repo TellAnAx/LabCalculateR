@@ -3,3 +3,5 @@
 .RData
 .Ruserdata
 *.Rproj
+rsconnect/
+R/rsconnect/shinyapps.io/tellanax/LabCalculateR.dcf
