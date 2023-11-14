@@ -5,3 +5,4 @@
 *.Rproj
 rsconnect/
 R/rsconnect/shinyapps.io/tellanax/LabCalculateR.dcf
+.DS_Store

@@ -1,8 +1,16 @@
 # Define UI for application that draws a histogram
 ui <- fluidPage(
+  ## Window title
+  tags$head(
+    tags$link(rel = "icon", type = "image/png", sizes = "32x32", href = "logo_frov.png")),
   
-  tags$h1("Equidistant calibration"),
-  tags$h2("Calculation of dilution series"),
+  # App title ----
+  titlePanel(title =  div(img(src="logo_frov.png"), tags$h1("LabCalculateR")), 
+             windowTitle = "LabCalculateR"), 
+  
+  #tags$text("Equidistant calibration"),
+  #tags$h2("Calculation of dilution series"),
+  tags$p("This Shiny app facilitates the preparation of an equidistant dilution series to create a calibration curve."),
   
   sidebarLayout(
     sidebarPanel(
