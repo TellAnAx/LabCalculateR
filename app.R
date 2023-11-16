@@ -11,6 +11,7 @@ library(shiny)
 library(dplyr)
 library(ggplot2)
 library(tibble)
+library(plotly)
 
 source("R/helper_functions.R")
 source("R/server.R")
