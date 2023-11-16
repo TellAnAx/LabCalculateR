@@ -17,7 +17,23 @@ ui <- fluidPage(
         sidebarPanel(tableOutput("resultTable")),
         mainPanel(plotOutput("resultPlot"))
         )    
-      )
+      ),
+    tabPanel("Calibration analysis", fluid = TRUE,
+             inputPanel(
+               # Concentration input (vector)
+               # Signal 1 input (vector)
+               # Signal 2 input (vector)
+               # Signal 3 input (vector)  
+             ),
+             sidebarLayout(
+               sidebarPanel(
+                 # calibration data output
+                  ),
+               mainPanel(
+                 # calibration plot
+                  )
+                )
+             )
   ),
   
   tags$footer("written by Anil A. Tellbuescher. Contact for troubleshooting: admin@tellbuescher.online")
