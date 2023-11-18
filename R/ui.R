@@ -1,8 +1,9 @@
 # Define UI for application that draws a histogram
 ui <- fluidPage(
   
-  tags$head(tags$link(rel = "icon", type = "image/png", sizes = "32x32", href = "logo_frov.png")),
-  titlePanel(title =  div(img(src="logo_frov_small.png"), "LabCalculateR"), windowTitle = "LabCalculateR"), 
+  #tags$head(tags$link(rel = "icon", type = "image/png", sizes = "32x32", href = "logo_frov.png")),
+  titlePanel(title =  div(#img(src="logo_frov_small.png"), 
+                          "LabCalculateR"), windowTitle = "LabCalculateR"), 
   
   tabsetPanel(
     tabPanel("Equidistant dilution", fluid = TRUE,
