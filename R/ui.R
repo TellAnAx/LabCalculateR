@@ -13,10 +13,13 @@ ui <- fluidPage(
         radioButtons("cV", "What would you like to calculate?", 
                      choices = c("Concentration 2" = "c2", "Volume 2" = "V2"))
       ),
-        p("Mathematical equation:"),
-        withMathJax("$$c_{1} V_{1} = c_{2} V_{2}$$"),
-        br(),
-        textOutput("numeric_output")
+      sidebarLayout(
+        sidebarPanel(textOutput("numeric_output")),
+        mainPanel(
+          p("Mathematical equation:"),
+          withMathJax("$$c_{1} V_{1} = c_{2} V_{2}$$")
+        )
+      )
       ),
     tabPanel("Equidistant dilution", fluid = TRUE,
       inputPanel(
