@@ -1,6 +1,13 @@
 # Define server logic required to draw a histogram
 server <- function(input, output) {
   
+# TAB CONCENTRATION----
+  output$numeric_output <- renderText({
+    calculate_c_V(c1 = input$c1, V1 = input$V1, x2 = input$x2)
+  })
+  
+  
+# TAB EQUIDISTANT DILUTION----
   result_table <- reactive({
     calculate_dilution_equidist(steps = input$n_steps,
                                 target_V = input$target_volume,
@@ -9,17 +16,18 @@ server <- function(input, output) {
                                 highest_conc = input$conc_highest)
   })
   
+  
   output$resultTable <- renderTable({result_table()},
                                     striped = TRUE,
                                     bordered = TRUE,
                                     align = "c",
                                     width = "100%")
   
+  
   output$resultPlot <- renderPlot({
     result_table() %>% 
       ggplot(aes(x = 1:input$n_steps, y = `Final concentration [mg/L]`)) +
       geom_col(fill = "lightblue") +
-      #geom_smooth(method = "lm", se = FALSE) +
       labs(x = "Calibration standard No.",
            y = "Concentration [mg/L]") +
       theme_minimal() +
