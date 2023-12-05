@@ -6,6 +6,16 @@ ui <- fluidPage(
                           "LabCalculateR"), windowTitle = "LabCalculateR"), 
   
   tabsetPanel(
+    tabPanel(
+      inputPanel(
+        
+      ),
+      sidebarLayout(
+        sidebarPanel(),
+        mainPanel()
+      )
+    ),
+    
     tabPanel("Equidistant dilution", fluid = TRUE,
       inputPanel(
         sliderInput("n_steps","Number of calibration standards",value = 5,min = 1,max = 10),
@@ -19,12 +29,12 @@ ui <- fluidPage(
         mainPanel(plotOutput("resultPlot"))
         )    
       ),
+    
     tabPanel("Concentration", fluid = TRUE,
              inputPanel(
                numericInput("c1", "Concentration 1", value = 1),
                numericInput("V1", "Volume 1", value = 1),
                numericInput("x2", "Concentration or Volume 2", value = 1)
-               #radioButtons("cV", "What would you like to calculate?", choices = c("Concentration 2" = "c2", "Volume 2" = "V2"))
              ),
              sidebarLayout(
                sidebarPanel(textOutput("numeric_output")),
