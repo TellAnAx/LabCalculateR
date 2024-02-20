@@ -20,20 +20,26 @@ ui <- fluidPage(
         )    
       ),
     tabPanel("Concentration", fluid = TRUE,
-             inputPanel(
-               numericInput("c1", "Concentration 1", value = 1),
-               numericInput("V1", "Volume 1", value = 1),
-               numericInput("x2", "Concentration or Volume 2", value = 1)
-               #radioButtons("cV", "What would you like to calculate?", choices = c("Concentration 2" = "c2", "Volume 2" = "V2"))
-             ),
              sidebarLayout(
-               sidebarPanel(textOutput("numeric_output")),
+               sidebarPanel(
+                 numericInput("c1", "Concentration 1", value = 1),
+                 numericInput("V1", "Volume 1", value = 1),
+                 numericInput("x2", "Concentration or Volume 2", value = 1)
+               ),
                mainPanel(
                  p("Mathematical equation:"),
-                 withMathJax("$$c_{1} V_{1} = c_{2} V_{2}$$")
-               )
+                 withMathJax("$$c_{1} V_{1} = c_{2} V_{2}$$"),
+                 textOutput("numeric_output", container = tags$h3))
              )
-    )
+      ),
+    tabPanel("Mole converter", fluid = TRUE,
+             sidebarLayout(
+               sidebarPanel(textInput("sum_formula", "Sum formula", value = "H", width = "100%")),
+               mainPanel(
+                 textOutput("mass", container = tags$h3)
+                 )
+             )
+             )
   ),
   
   tags$footer("written by Anil A. Tellbuescher. Contact for troubleshooting: admin@tellbuescher.online")

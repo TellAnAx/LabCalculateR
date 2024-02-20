@@ -1,9 +1,17 @@
 # Define server logic required to draw a histogram
 server <- function(input, output) {
   
+# TAB MOLCONVERTER
+  output$mass <- renderText({
+    paste("One mole of", input$sum_formula, "has a mass of", 
+          sum(map_dbl(convert_formula(input$sum_formula), ~ mass(.x))), "grams.")
+  })
+  
+  
 # TAB CONCENTRATION----
   output$numeric_output <- renderText({
-    calculate_c_V(c1 = input$c1, V1 = input$V1, x2 = input$x2)
+    paste("The resulting concentration is", 
+          calculate_c_V(c1 = input$c1, V1 = input$V1, x2 = input$x2))
   })
   
   

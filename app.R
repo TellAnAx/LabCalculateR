@@ -12,6 +12,8 @@ library(dplyr)
 library(ggplot2)
 library(tibble)
 library(plotly)
+library(purrr)
+library(PeriodicTable)
 
 source("R/helper_functions.R")
 source("R/server.R")
