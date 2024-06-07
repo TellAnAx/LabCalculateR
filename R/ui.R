@@ -44,7 +44,9 @@ ui <- fluidPage(
     tabPanel("Mole converter", fluid = TRUE,
              sidebarLayout(
                sidebarPanel(
-                 textInput("sum_formula", "Sum formula", value = "H", width = "100%")
+                 textInput("sum_formula", "Sum formula", value = "H", width = "100%"),
+                 radioButtons("n_or_m", "Mole or Mass", choices = c("Mole" = "n", "Mass" = "m")),
+                 numericInput("input_number", "Input value", value = 1)
                  ),
                mainPanel(
                  textOutput("mass", container = tags$h3)
