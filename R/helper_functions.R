@@ -38,26 +38,31 @@ calculate_dilution_equidist <- function(steps_concentrations = NULL,
 # a vector of the elements so that the mass function from the PeriodicTable 
 # package can replace the elements with the respective molar mass.
 convert_formula <- function(formula) {
-  # Use regular expression to match elements and their counts
-  matches <- gregexpr("[A-Z][a-z]?\\d*", formula)
-  
-  # Extract matched substrings
-  substrings <- regmatches(formula, matches)[[1]]
-  
-  # Initialize an empty vector to store the elements
-  elements <- c()
-  
-  # Loop through the substrings and extract elements and counts
-  for (substring in substrings) {
-    element <- gsub("\\d", "", substring)  # Extract element
-    count <- as.numeric(gsub("[A-Za-z]", "", substring))  # Extract count, if any
+  # Funktion zur Verarbeitung von Teilformeln
+  process_subformula <- function(subformula, multiplier = 1) {
+    matches <- gregexpr("[A-Z][a-z]?\\d*|\\([A-Za-z0-9]*\\)\\d*", subformula)
+    substrings <- regmatches(subformula, matches)[[1]]
     
-    # If no count is specified, default to 1
-    count[is.na(count)] <- 1
+    elements <- c()
     
-    # Repeat the element according to its count and append to the vector
-    elements <- c(elements, rep(element, count))
+    for (substring in substrings) {
+      if (grepl("^\\(", substring)) { # Teilformel in Klammern
+        # Extrahiere den Inhalt der Klammern und den nachfolgenden Multiplikator
+        inner_formula <- gsub("^\\((.*)\\)\\d*$", "\\1", substring)
+        inner_multiplier <- as.numeric(gsub("^.*\\)(\\d*)$", "\\1", substring))
+        if (is.na(inner_multiplier)) inner_multiplier <- 1
+        elements <- c(elements, process_subformula(inner_formula, inner_multiplier * multiplier))
+      } else { # normales Element
+        element <- gsub("\\d", "", substring)
+        count <- as.numeric(gsub("[A-Za-z]", "", substring))
+        if (is.na(count)) count <- 1
+        elements <- c(elements, rep(element, count * multiplier))
+      }
+    }
+    
+    return(elements)
   }
   
-  return(elements)
+  return(process_subformula(formula))
 }
+
