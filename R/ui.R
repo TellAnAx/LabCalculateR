@@ -32,10 +32,10 @@ ui <- fluidPage(
                  numericInput("x2", "Concentration or Volume 2", value = 1)
                ),
                mainPanel(
-                 tags$h1("Resulting concentration"),
-                 textOutput("numeric_output")),
-                 tags$h1("Mathematical equation"),
-                 withMathJax("$$c_{1} V_{1} = c_{2} V_{2}$$")
+                 tags$h1("Output:"),
+                 textOutput("numeric_output", container = tags$p),
+                 tags$h3("Mathematical equation:"),
+                 withMathJax("$$c_{1} V_{1} = c_{2} V_{2}$$"))
              )
       ),
     
@@ -45,11 +45,12 @@ ui <- fluidPage(
              sidebarLayout(
                sidebarPanel(
                  textInput("sum_formula", "Sum formula", value = "H", width = "100%"),
-                 radioButtons("n_or_m", "Mole or Mass", choices = c("Mole" = "n", "Mass" = "m")),
-                 numericInput("input_number", "Input value", value = 1)
+                 radioButtons("n_or_m", "Given:", choices = c("Mole" = "n", "Mass" = "m")),
+                 numericInput("input_number", "Value", value = 1, min = 0)
                  ),
                mainPanel(
-                 textOutput("mass", container = tags$h3)
+                 textOutput("mass", container = tags$h3),
+                 textOutput("mole_or_mass", container = tags$h3)
                  )
              )
              )

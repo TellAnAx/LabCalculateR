@@ -66,3 +66,20 @@ convert_formula <- function(formula) {
   return(process_subformula(formula))
 }
 
+
+
+# Function to calculate either n or m based on the choice of the user,
+# an input value provided by the user, and M which is calculated based on
+# the chemical formula that is provided by the user.
+calculate_n_m <- function(input_value,
+                          M,
+                          n_or_m) {
+  output <- vector(mode = "numeric")
+  if(n_or_m == "n") {
+    output <- input_value * M
+  } else {
+    output <- input_value / M
+  }
+  
+  return(output)
+}
