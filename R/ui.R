@@ -6,6 +6,8 @@ ui <- fluidPage(
                           "LabCalculateR"), windowTitle = "LabCalculateR"), 
   
   tabsetPanel(
+    
+    # EQUIDISTANT DILUTION SERIES----
     tabPanel("Equidistant dilution", fluid = TRUE,
       inputPanel(
         sliderInput("n_steps","Number of calibration standards",value = 5,min = 1,max = 10),
@@ -19,6 +21,9 @@ ui <- fluidPage(
         mainPanel(plotOutput("resultPlot"))
         )    
       ),
+    
+    
+    # CONCENTRATION CALCULATOR----
     tabPanel("Concentration", fluid = TRUE,
              sidebarLayout(
                sidebarPanel(
@@ -27,14 +32,20 @@ ui <- fluidPage(
                  numericInput("x2", "Concentration or Volume 2", value = 1)
                ),
                mainPanel(
-                 p("Mathematical equation:"),
-                 withMathJax("$$c_{1} V_{1} = c_{2} V_{2}$$"),
-                 textOutput("numeric_output", container = tags$h3))
+                 tags$h1("Resulting concentration"),
+                 textOutput("numeric_output")),
+                 tags$h1("Mathematical equation"),
+                 withMathJax("$$c_{1} V_{1} = c_{2} V_{2}$$")
              )
       ),
+    
+    
+    # MOLE CONVERTER----
     tabPanel("Mole converter", fluid = TRUE,
              sidebarLayout(
-               sidebarPanel(textInput("sum_formula", "Sum formula", value = "H", width = "100%")),
+               sidebarPanel(
+                 textInput("sum_formula", "Sum formula", value = "H", width = "100%")
+                 ),
                mainPanel(
                  textOutput("mass", container = tags$h3)
                  )
