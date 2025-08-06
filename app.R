@@ -1,19 +1,18 @@
-#
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
-#
+library(shiny)
+library(dplyr)
+library(ggplot2)
+library(tibble)
+library(plotly)
+library(purrr)
+library(PeriodicTable)
 
-source("global.R")
 
 source("R/helper_functions.R")
 
 source("modules/ui_equidist.R")
 source("modules/ui_conccalc.R")
 source("modules/ui_molconv.R")
+
 source("modules/server_equidist.R")
 source("modules/server_conccalc.R")
 source("modules/server_molconv.R")
