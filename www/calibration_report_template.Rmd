@@ -40,7 +40,7 @@ This report summarizes the results of a linear regression calibration model.
 
 ## Residuals Plot
 
-![Residuals curve](residual_plot.png){width=100%, height=100%}
+![Residuals](residual_plot.png){width=100%, height=100%}
 
 
 
