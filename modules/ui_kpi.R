@@ -2,18 +2,38 @@ ui_kpi <- function(id) {
   ns <- NS(id)
   tagList(
     sidebarLayout(
+      
       sidebarPanel(
-        h4("Enter values for the table"),
-        lapply(1:10, function(i) {
-          fluidRow(
-            column(6, textInput(paste0("col1_", i), label = paste("Column 1, Row", i))),
-            column(6, textInput(paste0("col2_", i), label = paste("Column 2, Row", i)))
-          )
-        }),
-        actionButton("submit", "Create Tibble")
+        width = 2,
+        h4("Enter calibration data"),
+        uiOutput(ns("dynamic_inputs")),
+        tags$hr(),
+        fluidRow(
+          column(6, actionButton(ns("submit"), "Calculate", class = "btn-primary")),
+          column(6, actionButton(ns("reset"), "Reset", class = "btn-secondary"))
+        )
       ),
+      
+      
       mainPanel(
-        tableOutput("tibble_output")
+        width = 10,
+        fluidRow(
+          column(
+            width = 10,
+            h4("Regression"),
+            plotOutput(ns("regression_plot")),
+            plotOutput(ns("residual_plot"))
+          ),
+          column(
+            width = 2,
+            h4("Model Summary"),
+            tableOutput(ns("model_summary")),
+            tags$hr(),
+            h4("Calibration data"),
+            tableOutput(ns("output_data")),
+            downloadButton(ns("download_report"), "Download PDF Report", class = "btn-success")
+          )
+        )
       )
     )
   )
