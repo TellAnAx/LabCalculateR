@@ -88,8 +88,8 @@ calculate_n_m <- function(input_value,
 
 
 
-custom_plot_theme <- function(base_size = 14, base_family = "sans") {
-  theme_minimal(base_size = base_size, base_family = base_family) +
+custom_plot_theme <- function(base_size = 14) {
+  theme_classic(base_size = base_size) +
     theme(
       plot.title = element_text(face = "bold", size = base_size + 2, hjust = 0.5),
       axis.title = element_text(size = base_size),
