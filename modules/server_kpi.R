@@ -228,14 +228,16 @@ server_kpi <- function(id) {
     output$regression_plot <- renderPlot({
       ggplot() + 
         labs(x = "concentration",
-             y = "response")
+             y = "response") +
+        custom_plot_theme()
     })
     
     output$residual_plot <- renderPlot({
       ggplot() + 
         geom_hline(yintercept = 0, color = "blue", linetype = "dashed") + 
         labs(x = "cal. point",
-             y = "error (%)")
+             y = "error (%)") +
+        custom_plot_theme()
     })
     
     
