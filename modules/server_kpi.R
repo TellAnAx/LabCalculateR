@@ -35,7 +35,7 @@ server_kpi <- function(id) {
         fluidRow(
           column(5, numericInput(
             ns(paste0("conc_", i)),
-            label = if (i == 1) "Conc." else NULL,
+            label = if (i == 1) "Concentration" else NULL,
             value = isolate(input_store[[paste0("conc_", i)]] %||% NA),
             min = 0
           )),
@@ -95,9 +95,9 @@ server_kpi <- function(id) {
           ggplot(aes(x = conc, 
                      y = response)) + 
           geom_point() + 
-          geom_smooth(method = "lm") + 
-          labs(x = "concentration",
-               y = "response") +
+          geom_smooth(method = "lm", se = FALSE) + 
+          labs(x = "Concentration",
+               y = "Response") +
           custom_plot_theme()
         
         ggsave("www/regression_plot.png", 
@@ -181,8 +181,8 @@ server_kpi <- function(id) {
           geom_segment(aes(x = id, xend = id, y = 0, yend = error_perc),
                        linetype = "solid") +
           geom_point(color = "red") +
-          labs(x = "cal. point",
-               y = "error (%)") +
+          labs(x = "Cal. point (no.)",
+               y = "Error (%)") +
           custom_plot_theme()
         
         ggsave("www/residual_plot.png", 
@@ -213,7 +213,7 @@ server_kpi <- function(id) {
     
     # Initial outputs----
     output$input_data <- renderTable({
-      tibble(`Conc.` = "–", `Response` = "–")
+      tibble(`Concentration` = "–", `Response` = "–")
     })
     
     output$model_summary <- renderTable({
@@ -222,21 +222,25 @@ server_kpi <- function(id) {
     })
     
     output$output_data <- renderTable({
-      tibble(`Cal. point` = "–", `Error (%)` = "–")
+      tibble(`Cal. point no.` = "–", `Error (%)` = "–")
     })
     
     output$regression_plot <- renderPlot({
       ggplot() + 
-        labs(x = "concentration",
-             y = "response") +
+        labs(x = "Concentration",
+             y = "Response") +
+        lims(x = c(0, 10),
+             y = c(0, 10)) +
         custom_plot_theme()
     })
     
     output$residual_plot <- renderPlot({
       ggplot() + 
         geom_hline(yintercept = 0, color = "blue", linetype = "dashed") + 
-        labs(x = "cal. point",
-             y = "error (%)") +
+        labs(x = "Cal. point (no.)",
+             y = "Error (%)") +
+        lims(x = c(0, 10),
+             y = c(-10, 10)) +
         custom_plot_theme()
     })
     
