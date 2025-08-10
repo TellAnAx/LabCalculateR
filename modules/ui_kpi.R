@@ -22,6 +22,7 @@ ui_kpi <- function(id) {
             width = 10,
             h4("Regression"),
             plotOutput(ns("regression_plot")),
+            h4("Residuals"),
             plotOutput(ns("residual_plot"))
           ),
           column(
