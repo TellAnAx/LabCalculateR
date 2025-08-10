@@ -97,7 +97,8 @@ server_kpi <- function(id) {
           geom_point() + 
           geom_smooth(method = "lm") + 
           labs(x = "concentration",
-               y = "response")
+               y = "response") +
+          custom_plot_theme()
         
         ggsave("www/regression_plot.png", 
                plot = plot_object, 
@@ -181,7 +182,8 @@ server_kpi <- function(id) {
                        linetype = "solid") +
           geom_point(color = "red") +
           labs(x = "cal. point",
-               y = "error (%)")
+               y = "error (%)") +
+          custom_plot_theme()
         
         ggsave("www/residual_plot.png", 
                plot = plot_object, 

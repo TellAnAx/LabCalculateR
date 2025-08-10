@@ -83,3 +83,21 @@ calculate_n_m <- function(input_value,
   
   return(output)
 }
+
+
+
+
+
+custom_plot_theme <- function(base_size = 14, base_family = "sans") {
+  theme_minimal(base_size = base_size, base_family = base_family) +
+    theme(
+      plot.title = element_text(face = "bold", size = base_size + 2, hjust = 0.5),
+      axis.title = element_text(size = base_size),
+      axis.text = element_text(size = base_size - 2),
+      legend.title = element_text(size = base_size),
+      legend.text = element_text(size = base_size - 2),
+      panel.grid.major = element_line(color = "grey80"),
+      panel.grid.minor = element_blank()
+    )
+}
+
