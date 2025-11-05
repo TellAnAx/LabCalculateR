@@ -14,9 +14,21 @@ source("R/helper_functions.R")
 source("modules/ui_equidist.R")
 source("modules/ui_conccalc.R")
 source("modules/ui_molconv.R")
+source("modules/ui_skalar.R")
 source("modules/server_equidist.R")
 source("modules/server_conccalc.R")
 source("modules/server_molconv.R")
+source("modules/server_skalar.R")
+
+
+
+# Data for Skalar UI
+data <- read_csv(
+  file = "skalar_reagents_chemicals.csv"
+) %>% 
+  rename_with(str_to_lower) %>% 
+  select(!starts_with("..."))
+
 
 
 
@@ -29,7 +41,8 @@ ui <- fluidPage(
   tabsetPanel(
     tabPanel("Equidistant dilution", ui_equidist("equidistant")),
     tabPanel("Concentration", ui_conccalc("concentration")),
-    tabPanel("Mole converter", ui_molconv("moleconverter"))
+    tabPanel("Mole converter", ui_molconv("moleconverter")),
+    tabPanel("Reagent converter", ui_skalar("skalar"))
   ),
   
   # FOOTER
@@ -54,6 +67,7 @@ server <- function(input, output, session) {
   server_equidist("equidistant")
   server_conccalc("concentration")
   server_molconv("moleconverter")
+  server_skalar("skalar")
 }
 
 

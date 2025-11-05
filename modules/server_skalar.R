@@ -1,4 +1,4 @@
-server_skalar <- function(id, data) {
+server_skalar <- function(id) {
   moduleServer(id, function(input, output, session) {
     ns <- session$ns
     
@@ -25,9 +25,9 @@ server_skalar <- function(id, data) {
     output$validation_msg <- renderText({
       req(input$analyte, input$reagent)
       if (!check_selection(data, input$analyte, input$reagent)) {
-        return("⚠️ Selection is invalid: multiple final volumes found.")
+        return("⚠️ Data is invalid: multiple final volumes found.")
       } else {
-        return("✅ Selection is valid.")
+        return("✅ Data is valid.")
       }
     })
     
