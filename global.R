@@ -1,8 +1,5 @@
 library(shiny)
-library(dplyr)
-library(ggplot2)
-library(tibble)
+library(tidyverse)
 library(plotly)
 library(purrr)
 library(PeriodicTable)
-
