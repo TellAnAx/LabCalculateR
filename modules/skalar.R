@@ -1,0 +1,24 @@
+data <- read_csv(
+  file = "skalar_reagents_chemicals.csv"
+  ) %>% 
+  rename_with(str_to_lower) %>% 
+  select(!starts_with("..."))
+
+analytes <- unique(data$analyte)
+
+reagents <- unique(data$reagent)
+
+
+check_selection <- function(data, anal, reag) {
+  unique_V <- data %>% 
+    filter(
+      analyte == anal &
+        reagent == reag
+    ) %>% 
+    distinct(`final v (ml)`)
+  
+  return(nrow(unique_V) == 1)
+}
+
+
+check_selection(data, "Nitrate", "Color reagent")
