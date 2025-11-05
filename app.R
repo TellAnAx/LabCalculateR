@@ -10,6 +10,7 @@
 source("global.R")
 
 source("R/helper_functions.R")
+source("R/data.R")
 
 source("modules/ui_equidist.R")
 source("modules/ui_conccalc.R")
@@ -19,16 +20,6 @@ source("modules/server_equidist.R")
 source("modules/server_conccalc.R")
 source("modules/server_molconv.R")
 source("modules/server_skalar.R")
-
-
-
-# Data for Skalar UI
-data <- read_csv(
-  file = "skalar_reagents_chemicals.csv"
-) %>% 
-  rename_with(str_to_lower) %>% 
-  select(!starts_with("..."))
-
 
 
 
