@@ -109,7 +109,7 @@ check_selection <- function(data, anal, reag) {
       analyte == anal &
         reagent == reag
     ) %>% 
-    distinct(`final v (ml)`)
+    distinct(V_specified_by_skalar)
   
   return(nrow(unique_V) == 1)
 }
@@ -122,9 +122,9 @@ recalculate_selection <- function(data, anal, reag, V_target) {
       analyte == anal &
         reagent == reag
     ) %>% 
-    group_by(chemical, sum) %>% 
+    group_by(chemical, sum, unit) %>% 
     summarise(
-      `m (g) or V (mL)` = `m (g) or v (ml)` * (V_target / `final v (ml)`)
+      quantity = quantity * (V_target / V_specified_by_skalar)
     )
 }
 
