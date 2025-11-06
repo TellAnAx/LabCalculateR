@@ -87,7 +87,6 @@ calculate_n_m <- function(input_value,
 
 
 
-
 custom_plot_theme <- function(base_size = 14) {
   theme_classic(base_size = base_size) +
     theme(
@@ -98,6 +97,34 @@ custom_plot_theme <- function(base_size = 14) {
       legend.text = element_text(size = base_size - 2),
       panel.grid.major = element_line(color = "grey80"),
       panel.grid.minor = element_blank()
+    )
+}
+
+
+
+
+check_selection <- function(data, anal, reag) {
+  unique_V <- data %>% 
+    filter(
+      analyte == anal &
+        reagent == reag
+    ) %>% 
+    distinct(`final v (ml)`)
+  
+  return(nrow(unique_V) == 1)
+}
+
+
+
+recalculate_selection <- function(data, anal, reag, V_target) {
+  data %>% 
+    filter(
+      analyte == anal &
+        reagent == reag
+    ) %>% 
+    group_by(chemical, sum) %>% 
+    summarise(
+      `m (g) or V (mL)` = `m (g) or v (ml)` * (V_target / `final v (ml)`)
     )
 }
 
