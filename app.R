@@ -1,10 +1,4 @@
-library(shiny)
-library(tibble)
-library(plotly)
-library(tidyverse)
-library(PeriodicTable)
-
-
+source("dependencies.R")
 source("R/helper_functions.R")
 source("R/data.R")
 
