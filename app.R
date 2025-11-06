@@ -1,25 +1,27 @@
-#
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
-#
+library(shiny)
+library(tibble)
+library(plotly)
+library(tidyverse)
+library(PeriodicTable)
 
-source("global.R")
 
 source("R/helper_functions.R")
 source("R/data.R")
 
+source("modules/ui_kpi.R")
 source("modules/ui_equidist.R")
 source("modules/ui_conccalc.R")
 source("modules/ui_molconv.R")
 source("modules/ui_skalar.R")
+
+source("modules/server_kpi.R")
 source("modules/server_equidist.R")
 source("modules/server_conccalc.R")
 source("modules/server_molconv.R")
 source("modules/server_skalar.R")
+
+
+
 
 
 
@@ -30,6 +32,7 @@ ui <- fluidPage(
   ),
   
   tabsetPanel(
+    tabPanel("KPIs", ui_kpi("kpi")),
     tabPanel("Equidistant dilution", ui_equidist("equidistant")),
     tabPanel("Concentration", ui_conccalc("concentration")),
     tabPanel("Mole converter", ui_molconv("moleconverter")),
@@ -55,6 +58,7 @@ ui <- fluidPage(
 
 
 server <- function(input, output, session) {
+  server_kpi("kpi")
   server_equidist("equidistant")
   server_conccalc("concentration")
   server_molconv("moleconverter")

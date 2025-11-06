@@ -1,0 +1,46 @@
+---
+title: "Calibration Report"
+output: pdf_document
+params:
+  slope: NA
+  intercept: NA
+  r_squared: NA
+  lod: NA
+  loq: NA
+  p_slope: NA
+  p_intercept: NA
+---
+
+## Linear Regression Summary
+
+This report summarizes the results of a linear regression calibration model.
+
+### Model Coefficients
+
+- **Slope**: `r params$slope`
+- **Intercept**: `r params$intercept`
+- **R-squared**: `r params$r_squared`
+
+### Detection Limits
+
+- **Limit of Detection (LOD)**: `r params$lod`
+- **Limit of Quantification (LOQ)**: `r params$loq`
+
+### Statistical Significance
+
+- **P-value (Slope)**: `r params$p_slope`
+- **P-value (Intercept)**: `r params$p_intercept`
+
+
+## Calibration Plot
+
+![Regression curve](regression_plot.png){width=100%, height=100%}
+
+
+
+## Residuals Plot
+
+![Residuals](residual_plot.png){width=100%, height=100%}
+
+
+
