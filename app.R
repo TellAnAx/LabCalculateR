@@ -1,6 +1,6 @@
-source("dependencies.R")
+source("global.R")
+
 source("R/helper_functions.R")
-source("R/data.R")
 
 source("modules/ui_kpi.R")
 source("modules/ui_equidist.R")

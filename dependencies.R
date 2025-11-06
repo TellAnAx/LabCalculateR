@@ -1,5 +1,0 @@
-library(shiny)
-library(tidyverse)
-library(plotly)
-library(purrr)
-library(PeriodicTable)
