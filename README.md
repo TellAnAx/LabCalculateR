@@ -5,3 +5,9 @@
 
 This is an R Shiny app to get basic tasks in the laboratory done with
 ease.
+
+**Current features**
+
+- KPI tab
+- Equidistant calibration tab
+- Skalar reagent calculator tab
