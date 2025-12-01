@@ -128,3 +128,36 @@ recalculate_selection <- function(data, anal, reag, V_target) {
     )
 }
 
+
+
+
+
+
+
+# Konfidenzband
+add_conf_band <- function(model, data, xvar, level = 0.95, n = 200,
+                          fill_label = "Confidence band") {
+  grid <- tibble(!!sym(xvar) := seq(min(data[[xvar]]), max(data[[xvar]]), length.out = n))
+  
+  conf_df <- grid %>%
+    bind_cols(as.data.frame(predict(model, newdata = grid, interval = "confidence", level = level))) %>%
+    rename(y_hat = fit, conf_low = lwr, conf_high = upr)
+  
+  geom_ribbon(data = conf_df,
+              aes(x = !!sym(xvar), ymin = conf_low, ymax = conf_high, fill = fill_label),
+              alpha = 0.3, inherit.aes = FALSE, show.legend = TRUE)
+}
+
+# Vorhersageband
+add_pred_band <- function(model, data, xvar, level = 0.95, n = 200,
+                          fill_label = "Prediction band") {
+  grid <- tibble(!!sym(xvar) := seq(min(data[[xvar]]), max(data[[xvar]]), length.out = n))
+  
+  pred_df <- grid %>%
+    bind_cols(as.data.frame(predict(model, newdata = grid, interval = "prediction", level = level))) %>%
+    rename(y_hat = fit, pred_low = lwr, pred_high = upr)
+  
+  geom_ribbon(data = pred_df,
+              aes(x = !!sym(xvar), ymin = pred_low, ymax = pred_high, fill = fill_label),
+              alpha = 0.25, inherit.aes = FALSE, show.legend = TRUE)
+}

@@ -8,32 +8,12 @@ server_kpi <- function(id) {
     summary_store <- reactiveVal(NULL)
     
     
-    # # Helper: fallback for NULL values
-    # `%||%` <- function(a, b) if (!is.null(a)) a else b
-    # 
-    # 
-    # # Render dynamic input fields with preserved values
-    # output$dynamic_inputs <- renderUI({
-    #   tibble(conc_id = paste0("conc_", 1:max_rows),
-    #          resp_id = paste0("response_", 1:max_rows),
-    #          row = 1:max_rows) %>%
-    #     mutate(ui = map2(conc_id, resp_id, ~ {
-    #       i <- as.integer(str_extract(.x, "\\d+"))
-    #       fluidRow(
-    #         column(5, numericInput(ns(.x), label = if (i == 1) "conc." else NULL, value = NA, min = 0, width = "100%")),
-    #         column(5, numericInput(ns(.y), label = if (i == 1) "sig." else NULL, value = NA, width = "100%"))
-    #       )
-    #     })) %>%
-    #     pull(ui)
-    # })
-    
-    
-    
+    # Data input table----
     output$input_table <- renderRHandsontable({
       rhandsontable(
         data = data.frame(
-          "conc." = as.numeric(rep(NA, 10)), 
-          "response" = as.numeric(rep(NA, 10))
+          "conc." = as.numeric(rep(NA, max_rows)), 
+          "response" = as.numeric(rep(NA, max_rows))
           ),
         useTypes = TRUE,
         readOnly = FALSE,
@@ -59,8 +39,9 @@ server_kpi <- function(id) {
     #   output$calplot <- renderPlot(NULL)
     # })
     
-    # Submit logic----
     
+    
+    # Submit logic----
     # After clicking on "Calculate"...
     observeEvent(input$submit, {
 
@@ -77,53 +58,30 @@ server_kpi <- function(id) {
       })
       
       
-      
+      ## MODEL----
       model_data <- input_data %>% 
         rename(
           conc = "conc."
         ) %>% 
         drop_na()
-      
       print("Model data generated successfully!")
       print(model_data)
       
-      
-      
-      output$regression_plot <- renderPlot({
-        plot_object <- model_data %>% 
-          ggplot(aes(x = conc, 
-                     y = response)) + 
-          geom_point() + 
-          geom_smooth(method = "lm", se = FALSE) + 
-          labs(x = "Concentration",
-               y = "Response") +
-          custom_plot_theme()
-        
-        ggsave("www/regression_plot.png", 
-               plot = plot_object, 
-               width = 17, height = 10.7, units = "cm")
-        
-        plot_object
-      })
-      
-      
-      
+  
       model <- lm(response ~ conc, 
                   data = model_data)
-      
       print("Model generated successfully!")
       print(summary(model))
       
       
-      
+      ## KPIs----
       slope <- coef(model)[["conc"]]
       intercept <- coef(model)[["(Intercept)"]]
       r_squared <- summary(model)$r.squared
       
-      # Residual standard deviation
+      # Standard deviation of residuals
       residual_std <- sd(residuals(model))
       
-      # LOD and LOQ
       LOD <- 3.3 * residual_std / slope
       LOQ <- 10 * residual_std / slope
       
@@ -140,24 +98,6 @@ server_kpi <- function(id) {
       ))
       
       
-      
-      # Summary table
-      model_summary <- tibble(
-        Metric = c("Slope", "Intercept", "R-squared", "LOD", "LOQ"),
-        Value = c(slope, intercept, r_squared, LOD, LOQ)
-      )
-      
-      print("Model summary generated successfully!")
-      print(model_summary)
-      
-      
-      
-      output$model_summary <- renderTable({
-        model_summary
-      })
-      
-      
-      
       output_data <- model_data %>% 
         mutate(
           id = 1:nrow(model_data),
@@ -166,13 +106,66 @@ server_kpi <- function(id) {
           error_rel = error_abs / prediction,
           error_perc = error_rel * 100
         )
-      
       print("Output data generated successfully!")
       print(output_data)
       
       
+      model_summary <- tibble(
+        Metric = c("Slope", "Intercept", "R-squared", "LOD", "LOQ"),
+        Value = c(slope, intercept, r_squared, LOD, LOQ)
+      )
+      print("Model summary generated successfully!")
+      print(model_summary)
       
-      output$residual_plot <- renderPlot({
+      
+      
+      ## TABLES----
+      
+      output$model_summary <- renderTable({
+        model_summary
+      })
+      
+      
+      output$output_data <- renderTable({
+        output_data %>% 
+          drop_na() %>% 
+          mutate(error_perc = paste0(round(error_perc, digits = 1), "%")) %>% 
+          select(id, error_perc) %>% 
+          rename(
+            `Cal. point` = "id",
+            `Error (%)` = "error_perc"
+          )
+      })
+      
+      
+      
+      ## PLOTS----
+
+      output$regression_plot <- renderPlot({
+        plot_object <- model_data %>% 
+          ggplot(aes(x = conc, 
+                     y = response)) + 
+          
+          add_pred_band(model, model_data, "conc") +    # Vorhersageband
+          add_conf_band(model, model_data, "conc") +    # Konfidenzband
+          
+          geom_point() + 
+          geom_smooth(method = "lm", se = FALSE) + 
+          labs(x = "Concentration",
+               y = "Response") +
+          scale_fill_manual(values = c("Confidence band" = "#4DB6AC", 
+                                      "Prediction band" = "#7986CB")) +
+          custom_plot_theme()
+        
+        ggsave("www/regression_plot.png", 
+               plot = plot_object, 
+               width = 17, height = 10.7, units = "cm")
+        
+        plot_object
+      })
+      
+      
+      output$residuals_plot <- renderPlot({
         plot_object <- output_data %>% 
           ggplot(aes(x = id, 
                      y = error_perc)) + 
@@ -184,66 +177,66 @@ server_kpi <- function(id) {
                y = "Error (%)") +
           custom_plot_theme()
         
-        ggsave("www/residual_plot.png", 
+        ggsave("www/residuals_plot.png", 
                plot = plot_object, 
                width = 17, height = 10.7, units = "cm")
         
         plot_object
       })
       
-      
-      
-      
-      output$output_data <- renderTable({
-        output_data %>% 
-          drop_na() %>% 
-          mutate(error_perc = paste0(round(error_perc, digits = 1), "%")) %>% 
-          select(id, error_perc) %>% 
-          rename(
-            `Cal. point` = "id",
-            `Error (%)` = "error_perc"
-            )
-      })
-      
-      
-      
-
     })
     
-    # Initial outputs----
-    output$input_data <- renderTable({
-      tibble(`Concentration` = "–", `Response` = "–")
-    })
     
+    
+    # BLANK OUTPUTS----
     output$model_summary <- renderTable({
-      tibble(Metric = c("Slope", "Intercept", "R-squared", "LOD", "LOQ"),
-             Value = rep("–", 5))
+      tibble(
+        Metric = c("Slope", "Intercept", "R-squared", "LOD", "LOQ"),
+        Value = rep("–", 5))
     })
+    
     
     output$output_data <- renderTable({
-      tibble(`Cal. point no.` = "–", `Error (%)` = "–")
+      tibble(
+        `Cal. point no.` = "–", 
+        `Error (%)` = "–")
     })
+    
     
     output$regression_plot <- renderPlot({
       ggplot() + 
-        labs(x = "Concentration",
-             y = "Response") +
-        lims(x = c(0, 10),
-             y = c(0, 10)) +
+        labs(
+          x = "Concentration",
+          y = "Response"
+          ) +
+        lims(
+          x = c(0, 10),
+          y = c(0, 10)
+          ) +
         custom_plot_theme()
     })
     
-    output$residual_plot <- renderPlot({
+    
+    output$residuals_plot <- renderPlot({
       ggplot() + 
-        geom_hline(yintercept = 0, color = "blue", linetype = "dashed") + 
-        labs(x = "Cal. point (no.)",
-             y = "Error (%)") +
-        lims(x = c(0, 10),
-             y = c(-10, 10)) +
+        geom_hline(
+          yintercept = 0, 
+          color = "blue", 
+          linetype = "dashed") + 
+        labs(
+          x = "Cal. point (no.)",
+          y = "Error (%)"
+          ) +
+        lims(
+          x = c(0, 10),
+          y = c(-10, 10)
+          ) +
         custom_plot_theme()
     })
     
     
+    
+    # CAL. REPORT----
     output$download_report <- downloadHandler(
       filename = function() {
         paste("calibration_report_", Sys.Date(), ".pdf", sep = "")
