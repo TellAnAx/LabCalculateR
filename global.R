@@ -3,6 +3,7 @@ library(shiny)
 library(tidyverse)
 library(plotly)
 library(PeriodicTable)
+library(rhandsontable)
 
 
 # LOAD DATA----

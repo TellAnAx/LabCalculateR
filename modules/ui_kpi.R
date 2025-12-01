@@ -6,7 +6,7 @@ ui_kpi <- function(id) {
       sidebarPanel(
         width = 2,
         h4("Enter calibration data"),
-        uiOutput(ns("dynamic_inputs")),
+        rHandsontableOutput(ns("input_table")),
         tags$hr(),
         fluidRow(
           column(6, 
