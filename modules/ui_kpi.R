@@ -9,8 +9,17 @@ ui_kpi <- function(id) {
         uiOutput(ns("dynamic_inputs")),
         tags$hr(),
         fluidRow(
-          column(6, actionButton(ns("submit"), "Calculate", class = "btn-primary")),
-          column(6, actionButton(ns("reset"), "Reset", class = "btn-secondary"))
+          column(6, 
+                 actionButton(ns("submit"), 
+                              "Calculate", 
+                              class = "btn-primary",
+                              width = "100%")),
+          tags$br(), tags$br(),
+          column(6, 
+                 actionButton(ns("reset"), 
+                              "Reset", 
+                              class = "btn-secondary",
+                              width = "100%"))
         )
       ),
       

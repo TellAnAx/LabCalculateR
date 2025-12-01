@@ -3,7 +3,6 @@ server_kpi <- function(id) {
   moduleServer(id, function(input, output, session) {
     ns <- session$ns
     max_rows <- 10
-    visible_rows <- reactiveVal(1)
     input_store <- reactiveValues()
     model_store <- reactiveVal(NULL)
     summary_store <- reactiveVal(NULL)
@@ -12,41 +11,22 @@ server_kpi <- function(id) {
     # Helper: fallback for NULL values
     `%||%` <- function(a, b) if (!is.null(a)) a else b
     
-    # Dynamically increase visible rows and store input values
-    observe({
-      current <- visible_rows()
-      if (current < max_rows) {
-        conc_val <- input[[paste0("conc_", current)]]
-        response_val <- input[[paste0("response_", current)]]
-        
-        input_store[[paste0("conc_", current)]] <- conc_val
-        input_store[[paste0("response_", current)]] <- response_val
-        
-        if (!is.null(conc_val) && !is.na(conc_val) &&
-            !is.null(response_val) && !is.na(response_val)) {
-          visible_rows(current + 1)
-        }
-      }
-    })
-    
+  
     # Render dynamic input fields with preserved values
     output$dynamic_inputs <- renderUI({
-      lapply(1:visible_rows(), function(i) {
-        fluidRow(
-          column(5, numericInput(
-            ns(paste0("conc_", i)),
-            label = if (i == 1) "Concentration" else NULL,
-            value = isolate(input_store[[paste0("conc_", i)]] %||% NA),
-            min = 0
-          )),
-          column(5, numericInput(
-            ns(paste0("response_", i)),
-            label = if (i == 1) "Response" else NULL,
-            value = isolate(input_store[[paste0("response_", i)]] %||% NA)
-          ))
-        )
-      })
+      tibble(conc_id = paste0("conc_", 1:max_rows),
+             resp_id = paste0("response_", 1:max_rows),
+             row = 1:max_rows) %>%
+        mutate(ui = map2(conc_id, resp_id, ~ {
+          i <- as.integer(str_extract(.x, "\\d+"))
+          fluidRow(
+            column(5, numericInput(ns(.x), label = if (i == 1) "conc." else NULL, value = NA, min = 0, width = "100%")),
+            column(5, numericInput(ns(.y), label = if (i == 1) "sig." else NULL, value = NA, width = "100%"))
+          )
+        })) %>%
+        pull(ui)
     })
+    
     
     # Reset logic----
     observeEvent(input$reset, {
@@ -57,8 +37,7 @@ server_kpi <- function(id) {
         input_store[[paste0("response_", i)]] <- NA
       }
       
-      visible_rows(1)
-      
+
       output$input_data <- renderTable(NULL)
       output$model_summary <- renderTable(NULL)
       output$calplot <- renderPlot(NULL)
@@ -67,9 +46,8 @@ server_kpi <- function(id) {
     # Submit logic----
     observeEvent(input$submit, {
 
-      n <- visible_rows()
-      conc_vals <- purrr::map_dbl(1:n, ~ input[[paste0("conc_", .x)]])
-      response_vals <- purrr::map_dbl(1:n, ~ input[[paste0("response_", .x)]])
+      conc_vals <- purrr::map_dbl(1:max_rows, ~ input[[paste0("conc_", .x)]])
+      response_vals <- purrr::map_dbl(1:max_rows, ~ input[[paste0("response_", .x)]])
       
       
       input_data <- tibble(conc = conc_vals, response = response_vals)
