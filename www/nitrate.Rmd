@@ -1,0 +1,289 @@
+---
+title: "Nitrate + Nitrite BLUVISION® Water"
+author: "Tellbüscher Anil Axel MSc."
+date: "Issue 190325/99425691"
+output: html_document
+---
+
+# General Method
+
+## PRINCIPLE
+
+The automated method for the determination of Nitrate and Nitrite is based on the hydrazine reduction method; nitrate is reduced to nitrite by hydrazinium sulfate and the nitrite (originally present plus reduced nitrate) is determined by diazotizing with sulfanilamide and coupling with N-(1-naphthyl)ethylenediamine dihydrochloride to form a highly colored azo dye which is measured at 540 nm.
+
+## LABORATORY FACILITIES
+
+1. Maximum power consumption depending on the analyzer configuration, 2000 VA. Check voltage at the back of the instrument before installation.
+2. Facilities for chemical wastes. Check environmental regulations for proper disposal of waste.
+
+## PROCEDURE SAMPLE PREPARATION
+
+1. Samples should be collected in plastic or glass bottles. All bottles must be thoroughly cleaned and rinsed with reagent water. Volume collected should be sufficient to ensure a representative sample, allow for replicate analysis (if required), and minimize waste disposal.
+2. Samples must never be preserved with acid for the NO2 analysis.
+3. Samples should be analyzed as soon as possible after collection. If storage is required for 1 – 2 days, freeze at -20°C or store at 4°C.
+
+## INTERFERENCES
+
+1. High alkalinity of samples may interfere with the analysis method. Neutralize with phosphoric acid.
+2. Amines, chloramines, thiosulfate, polyphosphate, Iron 3+, and oxidizing compounds may interfere.
+
+# REAGENTS
+
+## R1. Sodium hydroxide solution (500 ml)
+
+**Required chemicals:**
+
+- Sodium hydroxide .......... 4 g. NaOH
+- Distilled water H2O
+
+**Preparation:**
+
+Dissolve sodium hydroxide in ≈ 400 ml of distilled water. Fill up to 500 ml with distilled water and mix.
+
+**Note:**
+
+Solution is stable for three months at 2 – 8 °C.
+
+## A. Stock solution copper sulfate (500 ml)
+
+**Required chemicals:**
+
+- Copper (II) sulfate pentahydrate .......... 0.195 g. CuSO4.5H2O
+- Distilled water H2O
+
+**Preparation:**
+
+Dissolve copper (II) sulfate pentahydrate in ≈ 400 ml of distilled water in a 500 ml volumetric flask. Fill up to 500 ml with distilled water and mix.
+
+**Note:**
+
+Solution is stable for three months at 2 – 8 °C.
+
+## B. Stock solution zinc sulfate (100 ml)
+
+**Required chemicals:**
+
+- Zinc sulfate heptahydrate .............. 4.5 g. ZnSO4.7H2O
+- Distilled water H2O
+
+**Preparation:**
+
+Dissolve zinc sulfate heptahydrate in ≈ 80 ml of distilled water. Fill up to 100 ml with distilled water and mix.
+
+**Note:**
+
+Solution is stable for three months at 2 – 8 °C.
+
+## C. Stock solution hydrazine sulfate (100 ml)
+
+**Required chemicals:**
+
+- Hydrazine sulfate ........... 1 g. N2H4.H2SO4
+- Distilled water H2O
+
+**Preparation:**
+
+Dissolve hydrazine sulfate in ≈ 80 ml of distilled water. Fill up to 100 ml with distilled water and mix.
+
+**Note:**
+
+Solution is stable for one week at 2 – 8 °C.
+
+## R2. Working solution hydrazine sulfate (100 ml)
+
+**Required chemicals:**
+
+- Copper sulfate stock solution ............ 1.5 ml.
+- Zinc sulfate stock solution ............... 1 ml.
+- Hydrazine sulfate stock solution ............ 6.5 ml.
+- Distilled water H2O
+
+**Preparation:**
+
+Add the copper sulfate stock solution, zinc sulfate stock solution, and hydrazine sulfate stock solution to ≈ 80 ml of distilled water in a 100 ml volumetric flask. Fill up to 100 ml with distilled water and mix.
+
+**Note:**
+
+Solution is stable for one day at 2 – 8 °C.
+
+## R3. Color reagent (500 ml)
+
+**Required chemicals:**
+
+- Phosphoric Acid ......... 25 ml. H3PO4 (65%)
+- Sulfanilamide .............. 2.5 g. C6H8N2O2S
+- N-(1-naphthyl) ethylene diamine dihydrochloride ....... 0.125 g. C12H16Cl2N2
+- Distilled water H2O
+
+**Preparation:**
+
+Dilute the hydrochloric acid in ≈ 400 ml of distilled water. Add the sulfanilamide and dissolve. Add the N-(1-naphthyl) ethylene diamine dihydrochloride and dissolve. Fill up to 500 ml with distilled water and mix.
+
+**Note:**
+
+Solution is stable for one month at 2 – 8 °C.
+
+# CATALOGUE NUMBERS REQUIRED CHEMICALS
+
+| Product                     | Supplier and catnr. |
+|-----------------------------|---------------------|
+| Sodium hydroxide            | Merck 106498        |
+| Copper(II)sulfate pentahydrate | Merck 102790    |
+| Zinc sulfate heptahydrate   | Merck 108883        |
+| Hydrazinium sulfate         | Merck 104603        |
+| Phosphoric acid (85%)       | Merck 100573        |
+| Hydrochloric acid (32%)     | Merck 100319        |
+| Sulfanilamide               | Merck 108035        |
+| N-(1-Naphthyl)ethylenediamine dihydrochloride | Merck 106237 |
+| Sodium nitrate              | Merck 106537        |
+| Sodium pyrophosphate decahydrate | Sigma 221368 |
+
+# RECOVERY CHECK
+
+Determine the reduction yield by analyzing a nitrate and a nitrite solution with the same N concentration which is approximately 100 % of the NO3-N measuring range. The absorbance of the nitrate solution should be between 90 % and 110 % of the absorbance of the nitrite solution. If the absorbance of the nitrate is lower than that of the nitrite solution, the nitrate conversion is not complete. The hydrazine content must be increased until the absorbance is within this range.
+
+# OPERATIONAL REMARKS AND TROUBLE SHOOTING
+
+1. Persons using this Skalar method should be familiar with normal laboratory practice. This Skalar method does not purport to address all of the safety problems, if any, associated with its use. It is the responsibility of the user to establish appropriate safety and health practices and to ensure compliance with any national regulatory conditions.
+2. The reagent bottles must be rinsed thoroughly with distilled water before refilling with fresh reagents. This is done to remove precipitation of microorganism and other interferences.
+3. Avoid any turbidity in the reagents, filter if necessary.
+4. It is advised to degas the distilled water (to remove the dissolved air) with one of the following procedures:
+    - a. Degas the water with the use of a deaerator (vacuum);
+    - b. Degas the water with a helium or nitrogen gas flow of approximately 20 liter/hour with the aid of a sparger for approximately 15 minutes.
+5. Before starting a new analysis, it is recommended to rinse the diluters to remove any available air bubbles. This can be done by the menu on the BluVision: Tools, Rinse, Flush Diluters. Repeat this procedure if needed.
+6. When a new cannister of distilled water is used flush the diluter to remove the visible air bubbles that are inside the tubing.
+7. When done with the BluVision, it is advised to remove (or close the lids of) the reagents in the sample reagent disk and empty the cuvette waste. Don’t forget to remove the lid before starting a new analysis!
+
+# REFERENCES
+
+1. ISO 15923-1: Water quality - Determination of selected parameters by discrete analysis systems – Part 1: Ammonium, nitrate, nitrite, chloride, orthophosphate, sulfate and silicate with photometric detection
+2. Kamphake, L.J., Hannah, S.A., Cohen, J.M., "Automated analysis for nitrate by hydrazine reduction", Water Research, 1, 1967, page 205-216.
+3. Kempers, A.J., Luft, A.G., "Re-examination of the determination of environmental Nitrate as Nitrite by reduction with hydrazine", Analyst, Vol. 113, July 1988, pp. 1117-1120.
+4. Standard Methods for the Examination of Water and Wastewater, 21st edition 2005, 1080 Reagent Water
+
+# BLUVISION SETTINGS
+
+| Parameter            | Sample | Reagent (R1) | Reagent (R2) | Reagent (R3) |
+|----------------------|--------|--------------|--------------|--------------|
+| Measurement required | ☑      | ☐            | ☐            | ☑            |
+| Initial air volume (µl) | 10  | 10           | 10           | 10           |
+| Liquid volume (µl)   | 125    | 150          | 90*          | 150          |
+| Extra liquid volume (µl) | 325 | 20           | 20           | 20           |
+| Air volume (µl)      | Water  | Extra        | Extra        | Extra        |
+| Inside rinsing volume (µl) | 1500 | 1500     | 1500         | 1500         |
+| Outside rinsing volume (µl) | 3500 | 3500    | 3500         | 3500         |
+| Reaction time (s)    | 0      | 0            | 1200         | 300          |
+| Stir time (s)        | 0      | 3            | 3            | 3            |
+| Pickup speed (steps) | 5      | 5            | 5            | 5            |
+| Dispense speed (steps)| 10    | 10           | 10           | 10           |
+
+*Depending on the strength of the batch of hydrazine sulfate (reagent R2), the volume can be increased or decreased with steps of 10 µl.
+
+# OPERATIONAL SETTINGS
+
+1. Wavelength: 540 nm
+2. Reaction type: Colorization
+3. Dilution type: Extra Cuvette
+4. Calibration type: ISO First order (ISO 8466-1)
+5. Working standards
+    - a. Stock concentration: 4 mg N/l
+6. The sensitivity of the highest standard (2 mg N/l) ≈ 1.000 AU.
+
+# STANDARD SOLUTIONS
+
+## Stock solution 1000 mg N/l
+
+**Required chemicals:**
+
+- Sodium nitrate ........ 6.068 g. NaNO3
+- Distilled water H2O
+
+**Preparation:**
+
+Dissolve the sodium nitrate in ≈ 800 ml of distilled water. Fill up to 1 liter with distilled water and mix.
+
+**Note:**
+
+Solution is stable for one month at room temperature.
+
+## Working stock solution 4 mg N/l
+
+Dilute 0.4 ml stock solution 1000 mg N/l to 100 ml with distilled water.
+
+## Working standards
+
+| Standard | Concentration (mg N/l) |
+|----------|-------------------------|
+| S1       | 0.05                    |
+| S2       | 0.10                    |
+| S3       | 0.20                    |
+| S4       | 0.40                    |
+| S5       | 0.80                    |
+| S6       | 1.20                    |
+| S7       | 1.60                    |
+| S8       | 2.00                    |
+
+# BLUVISION SETTINGS (1 – 25 mg N/l)
+
+| Parameter            | Sample | Reagent (R1) | Reagent (R2) | Reagent (R3) |
+|----------------------|--------|--------------|--------------|--------------|
+| Measurement point    | ☑      | ☐            | ☐            | ☑            |
+| Pre-air volume (µl)  | 10     | 10           | 10           | 10           |
+| Volume (µl)          | 10     | 150          | 90*          | 150          |
+| Additional volume (µl)| 440   | 20           | 20           | 20           |
+| Pipetted as          | Water  | Extra        | Extra        | Extra        |
+| Inside rinsing volume (µl)| 1500 | 1500      | 1500         | 1500         |
+| Outside rinsing volume (µl)| 3500 | 3500     | 3500         | 3500         |
+| Reaction time (s)    | 0      | 0            | 1200         | 300          |
+| Stir time (s)        | 0      | 3            | 3            | 3            |
+| Pickup speed (steps) | 5      | 5            | 5            | 5            |
+| Dispense speed (steps)| 10    | 10           | 10           | 10           |
+
+*Depending on the strength of the batch of hydrazine sulfate (reagent R2), the volume can be increased or decreased with steps of 10 µl.
+
+# OPERATIONAL SETTINGS
+
+1. Wavelength: 540 nm
+2. Reaction type: Colorization
+3. Dilution type: Extra cuvette
+4. Calibration type: ISO First order (ISO 8466-1)
+5. Working standards
+    - a. Stock concentration: 50 mg N/l
+6. The sensitivity of the highest standard (25 mg N/l) ≈ 1.100 AU.
+
+# STANDARD SOLUTIONS (1 – 25 mg N/l)
+
+## Stock solution 1000 mg N/l
+
+**Required chemicals:**
+
+- Sodium nitrate ........ 6.068 g. NaNO3
+- Distilled water H2O
+
+**Preparation:**
+
+Dissolve the sodium nitrate in ≈ 800 ml of distilled water. Fill up to 1 liter with distilled water and mix.
+
+**Note:**
+
+Solution is stable for one month at room temperature.
+
+## Stock solution 50 mg N/l
+
+Dilute 5 ml stock solution 1000 mg N/l to 100 ml with distilled water.
+
+**Note:**
+
+The stock standard is two times higher than the highest standard.
+
+## Working standards
+
+| Standard | Concentration (mg N/l) |
+|----------|-------------------------|
+| S1       | 1.0                     |
+| S2       | 2.5                     |
+| S3       | 5.0                     |
+| S4       | 10.0                    |
+| S5       | 15.0                    |
+| S6       | 20.0                    |
+| S7       | 25.0                    |

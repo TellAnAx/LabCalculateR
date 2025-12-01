@@ -25,7 +25,7 @@ server_skalar <- function(id) {
     output$validation_msg <- renderText({
       req(input$analyte, input$reagent)
       if (!check_selection(data, input$analyte, input$reagent)) {
-        return("⚠️ Data is invalid: multiple final volumes found.")
+        return("⚠️ Data is invalid: multiple final volumes found. Contact admin.")
       } else {
         return("✅ Data is valid.")
       }
@@ -35,7 +35,10 @@ server_skalar <- function(id) {
     output$recalculated_table <- renderTable({
       req(input$analyte, input$reagent, input$target_volume)
       if (check_selection(data, input$analyte, input$reagent)) {
-        recalculate_selection(data, input$analyte, input$reagent, input$target_volume)
+        recalculate_selection(data, input$analyte, input$reagent, input$target_volume) %>% 
+          select(chemical, sum, quantity, unit) %>% 
+          rename(`sum formula` = "sum") %>% 
+          rename_with(str_to_title)
       } else {
         NULL
       }

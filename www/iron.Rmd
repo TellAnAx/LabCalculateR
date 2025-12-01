@@ -1,0 +1,185 @@
+---
+title: "Iron BLUVISION® Water"
+author: "Tellbüscher Anil Axel MSc."
+date: "Issue 190325/99425691"
+output: html_document
+---
+
+# General Method
+
+## PRINCIPLE
+
+The automated procedure for the determination of ferrous iron (II) is based on the following reaction; the sample is mixed with o-phenanthroline, which forms a colored complex with the ferrous iron. The complex is measured at 505 nm. When total iron (II + III) needs to be measured, hydroxylammonium chloride solution is added to reduce iron (III) to ferrous iron (II).
+
+## LABORATORY FACILITIES
+
+1. Maximum power consumption depending on the analyzer configuration, 2000 VA. Check voltage at the back of the instrument before installation.
+2. Facilities for chemical wastes. Check environmental regulations for proper disposal of waste.
+
+## PROCEDURE SAMPLE PREPARATION
+
+1. Use clean vessels for sampling.
+2. Turbidity or particulates interfere with spectrophotometric detection. Using an appropriate filtration apparatus, clarify any samples containing particles by filtering through a 0.45 μm membrane (settlement, centrifugation or dialysis may also be used). To avoid contamination by the filter membrane, discard the first few milliliters of filtrate.
+3. Iron(II) reacts with 1,10-phenanthroline to form an orange-red colored dye which is stable at pH 2.5 to 9. If the sample is filtered before analysis, only dissolved iron is determined, which is mainly iron(II). Iron(III) compounds are generally quite insoluble. If the sample is treated with acid prior to filtration, total iron can be determined. Depending on the sample type, a more or less vigorous acid treatment may be needed to dissolve all of the iron. Care is needed to ensure that the buffer can maintain the pH in the correct range.
+
+## INTERFERENCES
+
+1. Interferences by copper, cobalt and zinc occur at concentrations 10 times higher than that of iron. The presence of excess 1,10-phenanthroline helps to minimize such cationic interferences.
+
+# REAGENTS
+
+## R1. Sodium acetate buffer (250 ml)
+
+**Required chemicals:**
+
+- Sodium acetate ............ 40 g. CH3COONa
+- Acetic acid .................. 50 ml. CH3COOH (100%)
+- Distilled water H2O
+
+**Preparation:**
+
+Dissolve the sodium acetate in ≈ 150 ml of distilled water. Add the acetic acid. Fill up to 250 ml with distilled water and mix.
+
+**Note:**
+
+Solution is stable for one month at room temperature.
+
+## R2. Hydroxylamine solution (100 ml)
+
+**Required chemicals:**
+
+- Hydroxylamine hydrochloride ............... 10 g. NH2OH.HCl
+- Distilled water H2O
+
+**Preparation:**
+
+Dissolve the hydroxylamine hydrochloride in ≈ 80 ml of distilled water. Fill up to 100 ml with distilled water and mix.
+
+**Note:**
+
+Solution is stable for two weeks at 2 – 8 °C.
+
+## R3. Phenanthroline solution (100 ml)
+
+**Required chemicals:**
+
+- 1,10-phenanthroline monohydrate .............. 0.50g C12H10N2O
+- Hydrochloric acid ..... 5 drops HCl (32%)
+- Distilled water H2O
+
+**Preparation:**
+
+Dissolve 1,10-phenanthroline in ≈ 80 ml of distilled water. Add 5 drops of hydrochloric acid. Fill up to 100 ml with distilled water and mix.
+
+**Note:**
+
+Store in a dark colored bottle. Solution is stable for one month at room temperature.
+
+# CATALOGUE NUMBERS REQUIRED CHEMICALS
+
+| Product                     | Supplier and catnr. |
+|-----------------------------|---------------------|
+| Sodium acetate              | Merck 1.06268       |
+| Acetic acid (glacial)       | Merck 1.00063       |
+| Hydroxylamine Hydrochloride | VWR 24708.292       |
+| 1,10-phenanthroline         | Merck 1.07225       |
+| Hydrochloric acid           | Merck 1.00313       |
+| Ammonium iron (III) sulfate dodecahydrate | Merck 1.03776 |
+| Sulfuric acid (95-97%)      | Merck 100731        |
+
+# OPERATIONAL REMARKS AND TROUBLE SHOOTING
+
+1. Persons using this Skalar method should be familiar with normal laboratory practice. This Skalar method does not purport to address all of the safety problems, if any, associated with its use. It is the responsibility of the user to establish appropriate safety and health practices and to ensure compliance with any national regulatory conditions.
+2. The reagent bottles must be rinsed thoroughly with distilled water before refilling with fresh reagents. This is done to remove precipitation of microorganism and other interferences.
+3. Avoid any turbidity in the reagents, filter if necessary.
+4. It is advised to degas the distilled water (to remove the dissolved air) with one of the following procedures:
+    - a. Degas the water with the use of a deaerator (vacuum);
+    - b. Degas the water with a helium or nitrogen gas flow of approximately 20 liter/hour with the aid of a sparger for approximately 15 minutes.
+5. Before starting a new analysis, it is recommended to rinse the diluters to remove any available air bubbles. This can be done by the menu on the BluVision: Tools, Rinse, Flush Diluters. Repeat this procedure if needed.
+6. When a new cannister of distilled water is used flush the diluter to remove the visible air bubbles that’s inside the tubing.
+7. When done with the BluVision it is advised to remove (or close the lids of) the reagents in the sample reagent disk and empty the cuvette waste. Don’t forget to remove the lid before starting a new analysis!
+
+# REFERENCES
+
+1. ISO/TS 15923-2: Water quality - Determination of selected parameters by discrete analysis systems – Part 2: Chromium(VI), fluoride, total alkalinity, total hardness, calcium, magnesium, iron, iron(II), manganese and aluminum with photometric detection
+2. Standard Methods for the Examination of Water and Wastewater, 21st edition 2005, 1080 Reagent Water
+
+# BLUVISION SETTINGS
+
+| Parameter            | Sample | Reagent (R1) | Reagent (R3) |
+|----------------------|--------|--------------|--------------|
+| Measurement point    | ☐      | ☐            | ☐            |
+| Initial air volume (µl) | 10  | 10           | 10           |
+| Liquid volume (µl)   | 450    | 100          | 20           |
+| Extra liquid volume (µl) | 20 | 20           | 20           |
+| Pipetted as          | Extra  | Extra        | Extra        |
+| Inside rinsing volume (µl) | 1500 | 1500     | 1500         |
+| Outside rinsing volume (µl) | 3500 | 3500    | 3500         |
+| Reaction time (s)    | 0      | 0            | 300          |
+| Stir time (s)        | 0      | 3            | 3            |
+| Pickup speed (steps) | 5      | 5            | 5            |
+| Dispense speed (steps)| 10    | 10           | 10           |
+
+# STANDARD SOLUTIONS
+
+## Stock solution 1000 mg Fe2+/l
+
+**Required chemicals:**
+
+- Ammonium iron (II) sulfate hexahydrate ............ 7.022 g. (NH₄)₂Fe(SO₄)₂·6H₂O
+- Hydrochloric acid ....... 15 ml. HCl (32%)
+- Distilled water H2O
+
+**Preparation:**
+
+Dissolve the ammonium iron (II) sulfate hexahydrate in ≈ 800 ml of distilled water. Add 15 ml hydrochloric acid. Fill up to 1 liter with distilled water and mix.
+
+**Note:**
+
+Solution is stable for one month at room temperature.
+
+## Working stock solution 2 mg Fe2+/l
+
+Dilute 0.2 ml stock solution 1000 mg Fe2+/l to 100 ml with distilled water.
+
+**Note:**
+
+The stock standard is two times higher than the highest standard.
+
+## Working standards
+
+| Standard | Concentration (mg Fe2+/l) |
+|----------|----------------------------|
+| S1       | 0.05                       |
+| S2       | 0.10                       |
+| S3       | 0.20                       |
+| S4       | 0.40                       |
+| S5       | 0.60                       |
+| S6       | 0.80                       |
+| S7       | 1.00                       |
+
+# BLUVISION SETTINGS (0.05 – 1 mg Fe2+/l)
+
+| Parameter            | Sample | Reagent (R1) | Reagent (R3) |
+|----------------------|--------|--------------|--------------|
+| Measurement point    | ☐      | ☐            | ☐            |
+| Initial air volume (µl) | 10  | 10           | 10           |
+| Liquid volume (µl)   | 450    | 100          | 20           |
+| Extra liquid volume (µl) | 20 | 20           | 20           |
+| Pipetted as          | Extra  | Extra        | Extra        |
+| Inside rinsing volume (µl) | 1500 | 1500     | 1500         |
+| Outside rinsing volume (µl) | 3500 | 3500    | 3500         |
+| Reaction time (s)    | 0      | 0            | 300          |
+| Stir time (s)        | 0      | 3            | 3            |
+| Pickup speed (steps) | 5      | 5            | 5            |
+| Dispense speed (steps)| 10    | 10           | 10           |
+
+# OPERATIONAL SETTINGS
+
+1. Wavelength: 500 nm
+2. Reaction type: Colorization
+3. Dilution type: Cuvette
+4. Calibration type: ISO First order (ISO 8466-1)
+5. Working standards
+    - a. Stock concentration: 2 mg Fe2+/l
+6. The sensitivity of the highest standard (1 mg Fe2+/l) ≈ 0.230 AU.
