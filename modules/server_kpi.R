@@ -8,13 +8,14 @@ server_kpi <- function(id) {
     summary_store <- reactiveVal(NULL)
     
     
-    # Data input table----
+    # Data input----
     output$input_table <- renderRHandsontable({
       rhandsontable(
         data = data.frame(
           "conc." = as.numeric(rep(NA, max_rows)), 
           "response" = as.numeric(rep(NA, max_rows))
           ),
+        rowHeaders = NULL,
         useTypes = TRUE,
         readOnly = FALSE,
         selectCallback = TRUE,
@@ -58,7 +59,7 @@ server_kpi <- function(id) {
       })
       
       
-      ## MODEL----
+      ## Fit model----
       model_data <- input_data %>% 
         rename(
           conc = "conc."
@@ -74,30 +75,74 @@ server_kpi <- function(id) {
       print(summary(model))
       
       
-      ## KPIs----
+      
+      # Calculate KPIs----
+      
+      ## Calibration model
       slope <- coef(model)[["conc"]]
       intercept <- coef(model)[["(Intercept)"]]
       r_squared <- summary(model)$r.squared
       
-      # Standard deviation of residuals
-      residual_std <- sd(residuals(model))
       
-      LOD <- 3.3 * residual_std / slope
-      LOQ <- 10 * residual_std / slope
+      ## Residuals
+      min_residuals <- min(residuals(model))
+      mean_residuals <- mean(residuals(model))
+      median_residuals <- median(residuals(model))
+      sd_residuals <- sd(residuals(model))
+      max_residuals <- max(residuals(model))
+      
+
+      sd_y <- sqrt(sum(resid(model)^2) / df.residual(model))
+      sd_x <- sd_y / slope
       
       
+      # LOD/LOQ
+      LOD <- 3.3 * sd_residuals / slope
+      LOQ <- 10 * sd_residuals / slope
+      
+      
+      # Store data for cal. report----
       model_store(model)
       summary_store(list(
         slope = slope,
         intercept = intercept,
         r_squared = r_squared,
+        min_residuals = min_residuals,
+        mean_residuals = mean_residuals,
+        median_residuals = median_residuals,
+        max_residuals = max_residuals,
         lod = LOD,
         loq = LOQ,
+        sd_y = sd_y,
+        sd_x = sd_x,
         p_slope = summary(model)$coefficients["conc", "Pr(>|t|)"],
         p_intercept = summary(model)$coefficients["(Intercept)", "Pr(>|t|)"]
       ))
       
       
+      # Summarize model----
+      model_summary <- tibble::tribble(
+        ~Metric,      ~Value,
+        "Slope",      slope, 
+        "Intercept",  intercept,
+        "R-squared",  r_squared,
+        "sd_y",        sd_y,
+        "sd_x",        sd_x,
+        "LOD",        LOD,
+        "LOQ",        LOQ
+      )
+      
+      print("Model summary generated successfully!")
+      print(model_summary)
+      
+      
+      output$model_summary <- renderTable({
+        model_summary
+      },
+      width = "100%")
+      
+      
+      # Output data----
       output_data <- model_data %>% 
         mutate(
           id = 1:nrow(model_data),
@@ -106,24 +151,9 @@ server_kpi <- function(id) {
           error_rel = error_abs / prediction,
           error_perc = error_rel * 100
         )
+      
       print("Output data generated successfully!")
       print(output_data)
-      
-      
-      model_summary <- tibble(
-        Metric = c("Slope", "Intercept", "R-squared", "LOD", "LOQ"),
-        Value = c(slope, intercept, r_squared, LOD, LOQ)
-      )
-      print("Model summary generated successfully!")
-      print(model_summary)
-      
-      
-      
-      ## TABLES----
-      
-      output$model_summary <- renderTable({
-        model_summary
-      })
       
       
       output$output_data <- renderTable({
@@ -135,11 +165,13 @@ server_kpi <- function(id) {
             `Cal. point` = "id",
             `Error (%)` = "error_perc"
           )
-      })
+      },
+      width = "100%")
       
       
       
-      ## PLOTS----
+      
+      # Create plots----
 
       output$regression_plot <- renderPlot({
         plot_object <- model_data %>% 
