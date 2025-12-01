@@ -1,0 +1,222 @@
+---
+title: "Ammonia BLUVISION® Water"
+author: "Tellbüscher Anil Axel MSc."
+date: "Issue 190325/99425691"
+output: html_document
+---
+
+# General Method
+
+## PRINCIPLE
+
+The automated procedure for the determination of Ammonia is based on the modified Berthelot reaction; the ammonia is chlorinated to monochloramine, which reacts with salicylate to 5-aminosalicylate. After oxidation and oxidative coupling, a green colored complex is formed. The color is measured at 660 nm.
+
+## LABORATORY FACILITIES
+
+1. Maximum power consumption depending on the analyzer configuration, 2000 VA. Check voltage at the back of the instrument before installation.
+2. Facilities for chemical wastes. Check environmental regulations for proper disposal of waste.
+
+## PROCEDURE SAMPLE PREPARATION
+
+1. Samples should be collected in plastic or glass bottles. All bottles must be thoroughly cleaned and rinsed with reagent water. Volume collected should be sufficient to insure a representative sample, allow for replicate analysis (if required), and minimize waste disposal.
+2. Samples must be preserved with sulfuric acid to a pH < 2 and cooled to 4°C at the time of collection.
+3. Samples should be analyzed as soon as possible after collection. If storage is required, preserved samples are maintained at 4°C and may be held for up to 28 days.
+
+## INTERFERENCES
+
+1. Interference by cations, especially calcium and magnesium ions, is masked by citrate. In saline samples, this interference can nevertheless occur if the complexing capacity of the citrate is exceeded. This can be prevented by carrying out a distillation in accordance with ISO 7150-1. Distillation is also advised for strongly coloured samples.
+2. Extremely high or low pH values of the samples can interfere.
+3. Primary amines and components that can reduce hypochlorite can interfere with the determination, but these are rarely present in interfering concentrations in water samples. If the presence of any of these interferents is suspected in samples, the magnitude of the interference should be assessed prior to analysis.
+
+# REAGENTS
+
+## Distilled water
+
+Special precaution must be taken to ensure that distilled water is free of ammonia. Such water is prepared by passage of distilled water through an ion exchange column comprised of a mixture of both strongly acidic cation and strongly basic anion exchange resin. The regeneration of the ion exchange column should be carried out according to the instructions of the manufacturer.
+
+## A. Nitric Acid solution (250 ml)
+
+**Required chemicals:**
+
+- Nitric acid (65%) ........... 1 ml. HNO3
+- Distilled water H2O
+
+**Preparation:**
+
+Dissolve the nitric acid in ≈ 200 ml of distilled water. Fill up to 250 ml with distilled water and mix.
+
+**Note:**
+
+Solution is stable for six months at room temperature.
+
+## R1. Sodium salicylate solution (250 ml)
+
+**Required chemicals:**
+
+- Sodium salicylate ...... 32.5 g. C6H4(OH)(COO)Na
+- Sodium citrate ........... 32.5 g. C6H5Na3O7.2H2O
+- Sodium nitroprusside ........... 0.245 g. Na2Fe(CN)5NO.2H2O
+- Distilled water H2O
+
+**Preparation:**
+
+Dissolve the sodium salicylate and the sodium citrate in ≈ 200 ml of distilled water. Adjust the pH to < 8.0 if needed with the Nitic acid solution. Add the sodium nitroprusside and dissolve. Fill up to 250 ml with distilled water and mix.
+
+**Note:**
+
+Solution is stable for one week at 2 – 8°C, stored in a dark colored bottle.
+
+## R2. DIC solution (250 ml)
+
+**Required chemicals:**
+
+- Sodium hydroxide .......... 8 g. NaOH
+- Sodium dichloroisocyanurate ................... 0.5 g. NaC3Cl2N3O3.2H2O
+- Distilled water H2O
+
+**Preparation:**
+
+Dissolve the sodium hydroxide in ≈ 200 ml distilled water, cool down and add the sodium dichloroisocyanurate. Fill up to 250ml with distilled water and mix.
+
+**Note:**
+
+Solution is stable for one week at 2 – 8°C, stored in a dark colored bottle.
+
+# CATALOGUE NUMBERS REQUIRED CHEMICALS
+
+| Product                     | Supplier and catnr. |
+|-----------------------------|---------------------|
+| Nitric acid (65%)           | Merck 100456        |
+| Sodium salicylate           | Merck 106601        |
+| Tri-sodium citrate dihydrate| Merck 106448        |
+| Sodium nitroprusside dihydrate | Merck 106541    |
+| Sodium hydroxide            | Merck 106498        |
+| Sodium dichloroisocyanurate dihydrate | Merck 110888 |
+| Ammonium chloride           | Merck 101145        |
+
+# OPERATIONAL REMARKS AND TROUBLE SHOOTING
+
+1. Persons using this Skalar method should be familiar with normal laboratory practice. This Skalar method does not purport to address all of the safety problems, if any, associated with its use. It is the responsibility of the user to establish appropriate safety and health practices and to ensure compliance with any national regulatory conditions.
+2. The reagent bottles must be rinsed thoroughly with distilled water before refilling with fresh reagents. This is done to remove precipitation of microorganism and other interferences.
+3. Avoid any turbidity in the reagents, filter if necessary.
+4. It is advised to degas the distilled water (to remove the dissolved air) with one of the following procedures:
+    - a. Degas the water with the use of a deaerator (vacuum);
+    - b. Degas the water with a helium or nitrogen gas flow of approximately 20 liter/hour with the aid of a sparger for approximately 15 minutes.
+5. Before starting a new analysis, it is recommended to rinse the diluters to remove any available air bubbles. This can be done by the menu on the BluVision: Tools, Rinse, Flush Diluters. Repeat this procedure if needed.
+6. When a new cannister of distilled water is used flush the diluter to remove the visible air bubbles that’s inside the tubing.
+7. When done with the BluVision it is advised to remove (or close the lids of) the reagents in the sample reagent disk and empty the cuvette waste. Don’t forget to remove the lid before starting a new analysis!
+
+# REFERENCES
+
+1. ISO 15923-1: Water quality — Determination of selected parameters by discrete analysis systems. Part 1: Ammonium, nitrate, nitrite, chloride, orthophosphate, sulfate and silicate with photometric detection
+2. Standard Methods for the Examination of Water and Wastewater, 21st edition 2005, 1080 Reagent Water
+
+# BLUVISION SETTINGS
+
+| Parameter            | Sample | Reagent (R1) | Reagent (R2) |
+|----------------------|--------|--------------|--------------|
+| Measurement Point    | ☐      | ☐            | ☐            |
+| Pre-air volume (µl)  | 10     | 10           | 10           |
+| Volume (µl)          | 450    | 90           | 90           |
+| Additional volume (µl)| 20    | 20           | 20           |
+| Pipetted as          | Extra  | Extra        | Extra        |
+| Inside rinsing volume (µl)| 1500 | 1500      | 1500         |
+| Outside rinsing volume (µl)| 3500 | 3500     | 3500         |
+| Reaction time (s)    | 0      | 0            | 480          |
+| Stir time (s)        | 0      | 3            | 3            |
+| Pickup speed (steps) | 5      | 5            | 5            |
+| Dispense speed (steps)| 10    | 10           | 10           |
+
+# STANDARD SOLUTIONS
+
+## Stock solution 1000 mg N/l
+
+**Required chemicals:**
+
+- Ammonium chloride ................... 3.819 g. NH4Cl (dried at 105°C)
+- Distilled water H2O
+
+**Preparation:**
+
+Dissolve the ammonium chloride in ≈ 800 ml distilled water. Fill up to 1 liter with distilled water and mix.
+
+**Note:**
+
+Solution is stable for two months at 2 – 8°C.
+
+## Alternate stock solution 1000 mg N/l
+
+**Required chemicals:**
+
+- Ammonium acetate .................... 5.506 g. C2H3O2NH4
+- Distilled water H2O
+
+**Preparation:**
+
+Dissolve the ammonium acetate in ≈ 800 ml distilled water. Fill up to 1 liter with distilled water and mix.
+
+**Note:**
+
+Solution is stable for two months at 2 – 8°C.
+
+## Stock solution 10 mg N/l
+
+Dilute 1 ml stock solution 1000 mg N/l to 100 ml with distilled water.
+
+## Working stock solution 400 µg N/l
+
+Dilute 4 ml stock solution 10 mg N/l to 100 ml with distilled water.
+
+**Note:**
+
+The stock standard is two times higher than the highest standard.
+
+## Working standards
+
+| Standard | Concentration (µg N/l) |
+|----------|-------------------------|
+| S1       | 5                       |
+| S2       | 10                      |
+| S3       | 20                      |
+| S4       | 40                      |
+| S5       | 80                      |
+| S6       | 120                     |
+| S7       | 160                     |
+| S8       | 200                     |
+
+# BLUVISION SETTINGS (0.1 – 10 mg N/l)
+
+| Parameter            | Sample | Reagent (R1) | Reagent (R2) |
+|----------------------|--------|--------------|--------------|
+| Measurement point    | ☐      | ☐            | ☐            |
+| Pre-air volume (µl)  | 10     | 10           | 10           |
+| Volume (µl)          | 40     | 90           | 90           |
+| Additional volume (µl)| 410   | 20           | 20           |
+| Pipetted as          | Water  | Extra        | Extra        |
+| Inside rinsing volume (µl)| 1500 | 1500      | 1500         |
+| Outside rinsing volume (µl)| 3500 | 3500     | 3500         |
+| Reaction time (s)    | 0      | 0            | 480          |
+| Stir time (s)        | 0      | 3            | 3            |
+| Pickup speed (steps) | 5      | 5            | 5            |
+| Dispense speed (steps)| 10    | 10           | 10           |
+
+## Working stock solution 20 mg N/l
+
+Dilute 2 ml stock solution 1000 mg N/l to 100 ml with distilled water.
+
+**Note:**
+
+The stock standard is two times higher than the highest standard.
+
+## Working standards
+
+| Standard | Concentration (mg N/l) |
+|----------|-------------------------|
+| S1       | 0.1                     |
+| S2       | 0.5                     |
+| S3       | 1.0                     |
+| S4       | 2.0                     |
+| S5       | 4.0                     |
+| S6       | 6.0                     |
+| S7       | 8.0                     |
+| S8       | 10.0                    |

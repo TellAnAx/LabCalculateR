@@ -1,0 +1,184 @@
+---
+title: "Magnesium BLUVISION® Water"
+author: "Tellbüscher Anil Axel MSc."
+date: "Issue 190325/99425691"
+output: html_document
+---
+
+# General Method
+
+## PRINCIPLE
+
+The automated procedure for the determination of Magnesium is based on the following reaction; the sample is mixed with a Xylidyl blue solution, which forms a pink colored complex with magnesium in alkaline conditions. The decolorization is measured at 630 nm.
+
+## LABORATORY FACILITIES
+
+1. Maximum power consumption depending on the analyzer configuration, 2000 VA. Check voltage at the back of the instrument before installation.
+2. Facilities for chemical wastes. Check environmental regulations for proper disposal of waste.
+
+## PROCEDURE SAMPLE PREPARATION
+
+1. Use clean vessels for sampling.
+2. Turbidity or particulates interfere with spectrophotometric detection. Using an appropriate filtration apparatus, clarify any samples containing particles by filtering through a 0.45 μm membrane (settlement, centrifugation or dialysis may also be used). To avoid contamination by the filter membrane, discard the first few millilitres of filtrate.
+3. ISO 5667-3 offers guidance on the preparation and storage of samples. The guidance in ISO 5667-3 for preservation of samples for iron, manganese, aluminium, calcium and magnesium recommend acidifying the sample to between pH 1 and 2, but this may not be appropriate for discrete analysis methods where pH is critical, e.g. calcium and manganese. In such cases, it is important to ensure that the buffering capacity of the reaction mixture is not exceeded.
+
+## INTERFERENCES
+
+A potential interference from calcium is removed by use of ethylene glycol tetraacetic acid (EGTA). There are no other known interferences in the range of interest. For high levels of calcium, it may be necessary to add additional EGTA reagent. Samples should be tested to assess the level of interference.
+
+# REAGENTS
+
+## A. Buffer solution (1 liter)
+
+**Required chemicals:**
+
+- TRIS ........................... 48.4 g. C4H11NO3
+- Potassium carbonate .................. 21.2 g. K2CO3
+- Distilled water H2O
+
+**Preparation:**
+
+Dissolve the TRIS in ≈ 800 ml of distilled water. Add potassium carbonate and dissolve. Fill up to 1 liter with distilled water and mix.
+
+**Note:**
+
+Solution is stable for one month at room temperature.
+
+## R1. EGTA solution (500 ml)
+
+**Required chemicals:**
+
+- EGTA .......................... 50 mg. C14H24N2O
+- Buffer solution ......... 500 ml. (Reagent A)
+
+**Preparation:**
+
+Dissolve the EGTA in 500 ml buffer solution (Reagent A).
+
+**Note:**
+
+Solution is stable for one month at room temperature.
+
+## R2. Chromogenic solution (250 ml)
+
+**Required chemicals:**
+
+- Xylidyl Blue ................ 50 mg. C₂₅H₂₀N₃NaO₆S
+- Buffer solution ......... 250 ml. (Reagent A)
+
+**Preparation:**
+
+Dissolve the Xylidyl blue in 250 ml buffer solution (Reagent A).
+
+**Note:**
+
+Solution is stable for one week if stored at 2 – 8 °C.
+
+# CATALOGUE NUMBERS REQUIRED CHEMICALS
+
+| Product                     | Supplier and catnr. |
+|-----------------------------|---------------------|
+| Xylidyl blue, sodium salt   | Sigma 248266        |
+| Tris(hydroxymethyl)aminomethane (TRIS) | Merck 108382 |
+| Ethylene glycol tetraacetic acid (EGTA) | Merck 108435 |
+| Potassium carbonate         | Merck 104928        |
+| Magnesium chloride hexahydrate | Merck 105833    |
+
+# OPERATIONAL REMARKS AND TROUBLE SHOOTING
+
+1. Persons using this Skalar method should be familiar with normal laboratory practice. This Skalar method does not purport to address all of the safety problems, if any, associated with its use. It is the responsibility of the user to establish appropriate safety and health practices and to ensure compliance with any national regulatory conditions.
+2. The reagent bottles must be rinsed thoroughly with distilled water before refilling with fresh reagents. This is done to remove precipitation of microorganism and other interferences.
+3. Avoid any turbidity in the reagents, filter if necessary.
+4. It is advised to degas the distilled water (to remove the dissolved air) with one of the following procedures:
+    - a. Degas the water with the use of a deaerator (vacuum);
+    - b. Degas the water with a helium or nitrogen gas flow of approximately 20 liter/hour with the aid of a sparger for approximately 15 minutes.
+5. Before starting a new analysis, it is recommended to rinse the diluters to remove any available air bubbles. This can be done by the menu on the BluVision: Tools, Rinse, Flush Diluters. Repeat this procedure if needed.
+6. When a new cannister of distilled water is used flush the diluter to remove the visible air bubbles that’s inside the tubing.
+7. When done with the BluVision it is advised to remove (or close the lids of) the reagents in the sample reagent disk and empty the cuvette waste. Don’t forget to remove the lid before starting a new analysis!
+
+# BLUVISION SETTINGS
+
+| Parameter            | Sample | Reagent (R1) | Reagent (R2) |
+|----------------------|--------|--------------|--------------|
+| Measurement point    | ☐      | ☐            | ☐            |
+| Pre-air volume (µl)  | 10     | 10           | 10           |
+| Volume (µl)          | 50     | 200          | 300          |
+| Additional volume (µl)| 400   | 20           | 20           |
+| Pipetted as          | Water  | Extra        | Extra        |
+| Inside rinsing volume (µl)| 1500 | 1500      | 1500         |
+| Outside rinsing volume (µl)| 3500 | 3500     | 3500         |
+| Reaction time (s)    | 0      | 0            | 120          |
+| Stir time (s)        | 0      | 3            | 10           |
+| Pickup speed (steps) | 10     | 10           | 10           |
+| Dispense speed (steps)| 5     | 5            | 5            |
+
+# STANDARD SOLUTIONS
+
+## Stock solution 1000 mg Mg/l
+
+**Required chemicals:**
+
+- Magnesium chloride ................. 8.3647 g. MgCl2.6H2O
+- Distilled water H2O
+
+**Preparation:**
+
+Dissolve the magnesium chloride in ≈ 800 ml of distilled water. Fill up to 1 liter with distilled water and mix.
+
+**Note:**
+
+Solution is stable for one month at 2 – 8 °C.
+
+## Working stock solution 20 mg Mg/l
+
+Dilute 2 ml stock solution 1000 mg Mg/l to 100 ml with distilled water.
+
+**Note:**
+
+The stock standard is two times higher than the highest standard.
+
+## Working standards
+
+| Standard | Concentration (mg Mg/l) |
+|----------|-------------------------|
+| S1       | 1                       |
+| S2       | 2                       |
+| S3       | 4                       |
+| S4       | 6                       |
+| S5       | 8                       |
+| S6       | 10                      |
+
+# BLUVISION SETTINGS (5 – 50 mg Mg/l)
+
+| Parameter            | Sample | Reagent (R1) | Reagent (R2) |
+|----------------------|--------|--------------|--------------|
+| Measurement point    | ☐      | ☐            | ☐            |
+| Pre-air volume (µl)  | 10     | 10           | 10           |
+| Volume (µl)          | 10     | 200          | 300          |
+| Additional volume (µl)| 440   | 20           | 20           |
+| Pipetted as          | Water  | Extra        | Extra        |
+| Inside rinsing volume (µl)| 1500 | 1500      | 1500         |
+| Outside rinsing volume (µl)| 3500 | 3500     | 3500         |
+| Reaction time (s)    | 0      | 0            | 120          |
+| Stir time (s)        | 0      | 3            | 10           |
+| Pickup speed (steps) | 5      | 5            | 5            |
+| Dispense speed (steps)| 10    | 10           | 10           |
+
+## Working stock solution 100 mg Mg/l
+
+Dilute 10 ml stock solution 1000 mg Mg/l to 100 ml with distilled water.
+
+**Note:**
+
+The stock standard is two times higher than the highest standard.
+
+## Working standards
+
+| Standard | Concentration (mg Mg/l) |
+|----------|-------------------------|
+| S1       | 5                       |
+| S2       | 10                      |
+| S3       | 20                      |
+| S4       | 30                      |
+| S5       | 40                      |
+| S6       | 50                      |

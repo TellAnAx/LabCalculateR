@@ -1,0 +1,178 @@
+---
+title: "Total Alkalinity BLUVISION® Water"
+author: "Tellbüscher Anil Axel MSc."
+date: "Issue 190325/99425691"
+output: html_document
+---
+
+# General Method
+
+## PRINCIPLE
+
+The automated procedure for the determination of Total Alkalinity is based on the reaction with bromophenol blue in a pH 3.5 phthalate buffer. The color change of red to blue is measured at 600 nm.
+
+## LABORATORY FACILITIES
+
+1. Maximum power consumption depending on the analyzer configuration, 2000 VA. Check voltage at the back of the instrument before installation.
+2. Facilities for chemical wastes. Check environmental regulations for proper disposal of waste.
+
+## PROCEDURE SAMPLE PREPARATION
+
+1. Sample must be cooled at 4°C and analyzed as soon as possible. Do not open the sample bottles before analysis.
+
+## INTERFERENCES
+
+None specified.
+
+# REAGENTS
+
+## A. Buffer stock solution (500 ml)
+
+**Required chemicals:**
+
+- Potassium hydrogen phthalate .......... 5.1 g. C8H5KO4
+- Hydrochloric acid Solution (1M) (Reagent C)
+- Distilled water H2O
+
+**Preparation:**
+
+Dissolve the potassium hydrogen phthalate in ≈ 400 ml of distilled water. Adjust the pH to 3.5 with the 1M hydrochloric acid solution. Fill up to 500 ml with distilled water and mix.
+
+**Note:**
+
+Store in a plastic bottle. Solution is stable for three months at 4 – 8 °C.
+
+## B. Bromophenol blue solution (250 ml)
+
+**Required chemicals:**
+
+- Bromophenol blue .......... 125 mg. C19H10Br4O5S
+- Ethanol ..................... 25 ml. C2H5OH (96%)
+- Distilled water H2O
+
+**Preparation:**
+
+Dissolve the bromophenol blue in 25 ml ethanol. Transfer the solution to 150 ml distilled water and mix. Fill up to 250 ml with distilled water and mix.
+
+**Note:**
+
+Solution is stable for one month at room temperature.
+
+## C. Hydrochloric acid solution (1M) (500 ml)
+
+**Required chemicals:**
+
+- Hydrochloric acid .......... 50 ml. HCl (32%)
+- Distilled water H2O
+
+**Preparation:**
+
+Dilute the hydrochloric acid in ≈ 400 ml of distilled water. Cool down and fill up to 500 ml with distilled water.
+
+**Note:**
+
+Solution is stable for three months at room temperature.
+
+## R1. Alkalinity reagent (100 ml)
+
+**Required chemicals:**
+
+- Buffer stock solution .......... 30 ml. (Reagent A)
+- Bromophenol blue Solution .......... 5 ml. (Reagent B)
+- Distilled water H2O
+
+**Preparation:**
+
+Dilute the buffer stock solution and bromophenol blue solution in 50 ml distilled water. Fill up to 100 ml with distilled water and mix.
+
+**Note:**
+
+Solution is stable for one day at room temperature.
+
+# CATALOGUE NUMBERS REQUIRED CHEMICALS
+
+| Product                     | Supplier and catnr. |
+|-----------------------------|---------------------|
+| Potassium hydrogen phthalate| Merck 104874        |
+| Hydrochloric acid (32%)     | Merck 100319        |
+| Bromophenol blue            | Merck 108122        |
+| Sodium carbonate            | Merck 106392        |
+| Ethanol (96%)               | Merck 159010        |
+
+# OPERATIONAL REMARKS AND TROUBLE SHOOTING
+
+1. Persons using this Skalar method should be familiar with normal laboratory practice. This Skalar method does not purport to address all of the safety problems, if any, associated with its use. It is the responsibility of the user to establish appropriate safety and health practices and to ensure compliance with any national regulatory conditions.
+2. The reagent bottles must be rinsed thoroughly with distilled water before refilling with fresh reagents. This is done to remove precipitation of microorganism and other interferences.
+3. Avoid any turbidity in the reagents, filter if necessary.
+4. It is advised to degas the distilled water (to remove the dissolved air) with one of the following procedures:
+    - a. Degas the water with the use of a deaerator (vacuum);
+    - b. Degas the water with a helium or nitrogen gas flow of approximately 20 liter/hour with the aid of a sparger for approximately 15 minutes.
+5. Before starting a new analysis, it is recommended to rinse the diluters to remove any available air bubbles. This can be done by the menu on the BluVision: Tools, Rinse, Flush Diluters. Repeat this procedure if needed.
+6. When a new cannister of distilled water is used flush the diluter to remove the visible air bubbles that’s inside the tubing.
+7. When done with the BluVision it is advised to remove (or close the lids of) the reagents in the sample reagent disk and empty the cuvette waste. Don’t forget to remove the lid before starting a new analysis!
+
+# REFERENCES
+
+1. Methods for the Examination of Waters and Associated Materials. The Determination of Alkalinity and Acidity in Water 1981. ISBN 0117516015 - Bromophenol Blue method.
+
+# BLUVISION SETTINGS
+
+| Parameter            | Sample | Reagent (R1) |
+|----------------------|--------|--------------|
+| Measurement point    | ☑      | ☑            |
+| Pre-air volume (µl)  | 10     | 10           |
+| Volume (µl)          | 400    | 90           |
+| Additional volume (µl)| 20    | 360          |
+| Pipetted as          | Extra  | Water        |
+| Inside rinsing volume (µl)| 1500 | 1500      |
+| Outside rinsing volume (µl)| 3500 | 3500     |
+| Reaction time (s)    | 0      | 300          |
+| Stir time (s)        | 0      | 3            |
+| Pickup speed (steps) | 5      | 5            |
+| Dispense speed (steps)| 10    | 10           |
+
+# OPERATIONAL SETTINGS
+
+1. Wavelength: 600 nm
+2. Reaction type: Colorization
+3. Dilution type: Cuvette
+4. Calibration type: ISO Second order (ISO 8466-2)
+5. Working standards
+    - a. Stock concentration: 500 mg CaCO3/l
+6. The sensitivity of the highest standard (500 mg CaCO3/l) ≈ 0.300 AU.
+
+# STANDARD SOLUTIONS
+
+## Stock solution 10,000 mg CaCO3/l
+
+**Required chemicals:**
+
+- Sodium carbonate .......... 10.59 g. Na2CO3
+- Distilled water H2O
+
+**Preparation:**
+
+Dissolve the sodium carbonate in ≈ 800 ml of distilled water. Fill up to 1 liter with distilled water and mix.
+
+**Note:**
+
+Solution is stable for one month at room temperature.
+
+## Working stock solution 500 mg CaCO3/l
+
+Dilute 5 ml stock solution 10,000 mg CaCO3/l to 100 ml with distilled water.
+
+**Note:**
+
+The stock standard is the highest standard.
+
+## Working standards
+
+| Standard | Concentration (mg CaCO3/l) |
+|----------|-----------------------------|
+| S1       | 50                          |
+| S2       | 100                         |
+| S3       | 200                         |
+| S4       | 300                         |
+| S5       | 400                         |
+| S6       | 500                         |

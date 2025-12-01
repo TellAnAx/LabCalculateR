@@ -1,0 +1,200 @@
+---
+title: "Sulfate BLUVISION® Water"
+author: "Tellbüscher Anil Axel MSc."
+date: "Issue 190325/99425691"
+output: html_document
+---
+
+# General Method
+
+## PRINCIPLE
+
+The automated procedure for the determination of Sulfate is based on the following reaction; the Sulfate ion is converted to a barium sulfate suspension under controlled conditions. The resulting turbidity is determined by a filter photometer and compared to a curve prepared from standard sulfate solutions and is measured at 540 nm.
+
+## LABORATORY FACILITIES
+
+1. Maximum power consumption depending on the analyzer configuration, 2000 VA. Check voltage at the back of the instrument before installation.
+2. Facilities for chemical wastes. Check environmental regulations for proper disposal of waste.
+
+## PROCEDURE SAMPLE PREPARATION
+
+1. Samples should be collected in plastic or glass bottles. All bottles must be thoroughly cleaned and rinsed with reagent water. Volume collected should be sufficient to ensure a representative sample, allow for replicate analysis (if required), and minimize waste disposal.
+2. Because turbidity and solid particles are disturbing the measurement, it is advised to filter the samples through a 0.45 µm membrane filter.
+
+## INTERFERENCES
+
+1. High concentrations of carbonate and bicarbonate can interfere.
+2. Highly colored samples may interfere.
+3. Turbidity and solid particles in the sample interfere in the measurement.
+
+# REAGENTS
+
+## R1. Sulfate solution (100 ml)
+
+**Required chemicals:**
+
+- Stock solution 10,000 mg SO4/l ........... 2 ml.
+- Distilled water H2O
+
+**Preparation:**
+
+Add the stock solution 10,000 mg SO4/l to ≈ 80 ml of distilled water. Fill up to 100 ml with distilled water and mix. To improve linearity, extra sulfate can be added in steps of 0.1 ml of 10,000 mg SO4/l stock solution.
+
+**Note:**
+
+Solution is stable for one week at 2 – 8 °C.
+
+## R2. Turbidity reagent (500 ml)
+
+**Required chemicals:**
+
+- Barium chloride ........... 5.0 g. BaCl2.2H2O
+- Sodium chloride .......... 5.0 g. NaCl
+- Hydrochloric acid ...... 2.5 ml. HCl (32%)
+- Gelatin ..................... 0.125 g.
+- Distilled water H2O
+
+**Preparation:**
+
+In a 500 ml beaker, dissolve the gelatin in ≈ 300 ml of hot (≈ 80°C) distilled water. Mix for at least one hour. Cool down and transfer the solution to a 500 ml Erlenmeyer flask. Add the barium chloride and the sodium chloride and dissolve. Add the hydrochloric acid. Fill up to 500 ml with distilled water and mix.
+
+**Note:**
+
+Solution is stable for one week at 2 – 8 °C. Gently homogenize the turbidity reagent before usage.
+
+# CATALOGUE NUMBERS REQUIRED CHEMICALS
+
+| Product                     | Supplier and catnr. |
+|-----------------------------|---------------------|
+| Barium chloride dihydrate   | Merck 101719        |
+| Hydrochloric acid (32%)     | Merck 100313        |
+| Sodium chloride             | Merck 106404        |
+| Sodium sulfate              | Merck 106649        |
+| Gelatin                     | Oxoid LP0008        |
+
+# OPERATIONAL REMARKS AND TROUBLE SHOOTING
+
+1. Persons using this Skalar method should be familiar with normal laboratory practice. This Skalar method does not purport to address all of the safety problems, if any, associated with its use. It is the responsibility of the user to establish appropriate safety and health practices and to ensure compliance with any national regulatory conditions.
+2. The reagent bottles must be rinsed thoroughly with distilled water before refilling with fresh reagents. This is done to remove precipitation of microorganism and other interferences.
+3. Avoid any turbidity in the reagents, filter if necessary.
+4. It is advised to degas the distilled water (to remove the dissolved air) with one of the following procedures:
+    - a. Degas the water with the use of a deaerator (vacuum);
+    - b. Degas the water with a helium or nitrogen gas flow of approximately 20 liter/hour with the aid of a sparger for approximately 15 minutes.
+5. Before starting a new analysis, it is recommended to rinse the diluters to remove any available air bubbles. This can be done by the menu on the BluVision: Tools, Rinse, Flush Diluters. Repeat this procedure if needed.
+6. When a new cannister of distilled water is used flush the diluter to remove the visible air bubbles that’s inside the tubing.
+7. When done with the BluVision it is advised to remove (or close the lids of) the reagents in the sample reagent disk and empty the cuvette waste. Don’t forget to remove the lid before starting a new analysis!
+
+# REFERENCES
+
+1. ISO 15923-1: Water quality - Determination of selected parameters by discrete analysis systems – Part 1: Ammonium, nitrate, nitrite, chloride, orthophosphate, sulfate and silicate with photometric detection
+2. Standard Methods for the Examination of Water and Wastewater, 21st edition 2005, 1080 Reagent Water
+
+# BLUVISION SETTINGS
+
+| Parameter            | Sample | Reagent (R1) | Reagent (R2) |
+|----------------------|--------|--------------|--------------|
+| Measurement point    | ☑      | ☐            | ☑            |
+| Pre-air volume (µl)  | 10     | 10           | 10           |
+| Volume (µl)          | 450    | 50           | 450          |
+| Additional volume (µl)| 20    | 20           | 20           |
+| Pipetted as          | Extra  | Extra        | Extra        |
+| Inside rinsing volume (µl)| 1500 | 1500      | 1500         |
+| Outside rinsing volume (µl)| 3500 | 3500     | 3500         |
+| Reaction time (s)    | 0      | 0            | 120          |
+| Stir time (s)        | 0      | 3            | 5            |
+| Pickup speed (steps) | 5      | 5            | 5            |
+| Dispense speed (steps)| 10    | 10           | 10           |
+
+# OPERATIONAL SETTINGS
+
+1. Wavelength: 540 nm
+2. Reaction type: Colorization
+3. Dilution type: Cuvette
+4. Calibration type: ISO Second order (ISO 8466-2)
+5. Working standards
+    - a. Stock concentration: 50 mg SO4/l
+6. The sensitivity of the highest standard (25 mg SO4/l) ≈ 0.150 AU.
+
+# STANDARD SOLUTIONS
+
+## Stock solution 10,000 mg SO4/l
+
+**Required chemicals:**
+
+- Sodium sulfate ...... 14.786 g. Na2SO4 (dried at 105°C)
+- Distilled water H2O
+
+**Preparation:**
+
+Dissolve the sodium sulfate in ≈ 800 ml of distilled water. Fill up to 1 liter with distilled water and mix.
+
+**Note:**
+
+Solution is stable for one month at room temperature.
+
+## Working stock solution 50 mg SO4/l
+
+Dilute 0.5 ml stock solution 10,000 mg SO4/l to 100 ml with distilled water.
+
+**Note:**
+
+The stock standard is two times higher than the highest standard.
+
+## Working standards
+
+| Standard | Concentration (mg SO4/l) |
+|----------|---------------------------|
+| S1       | 1.0                       |
+| S2       | 2.5                       |
+| S3       | 5.0                       |
+| S4       | 10                        |
+| S5       | 15                        |
+| S6       | 20                        |
+| S7       | 25                        |
+
+# BLUVISION SETTINGS (10 – 250 mg SO4/l)
+
+| Parameter            | Sample | Reagent (R1) | Reagent (R2) |
+|----------------------|--------|--------------|--------------|
+| Measurement point    | ☑      | ☐            | ☑            |
+| Pre-air volume (µl)  | 10     | 10           | 10           |
+| Volume (µl)          | 80     | 50           | 450          |
+| Additional volume (µl)| 370   | 20           | 20           |
+| Pipetted as          | Water  | Extra        | Extra        |
+| Inside rinsing volume (µl)| 1500 | 1500      | 1500         |
+| Outside rinsing volume (µl)| 3500 | 3500     | 3500         |
+| Reaction time (s)    | 0      | 0            | 120          |
+| Stir time (s)        | 0      | 3            | 5            |
+| Pickup speed (steps) | 5      | 5            | 5            |
+| Dispense speed (steps)| 10    | 10           | 10           |
+
+# OPERATIONAL SETTINGS
+
+1. Wavelength: 540 nm
+2. Reaction type: Colorization
+3. Dilution type: Extra cuvette
+4. Calibration type: ISO Second order (ISO 8466-2)
+5. Working standards
+    - a. Dilution type: Extra Cuvette
+    - b. Stock concentration: 500 mg SO4/l
+6. The sensitivity of the highest standard (250 mg SO4/l) ≈ 0.250 AU.
+
+## Working stock solution 500 mg SO4/l
+
+Dilute 5 ml stock solution 10,000 mg SO4/l to 100 ml with distilled water.
+
+**Note:**
+
+The stock standard is two times higher than the highest standard.
+
+## Working standards
+
+| Standard | Concentration (mg SO4/l) |
+|----------|---------------------------|
+| S1       | 10                        |
+| S2       | 25                        |
+| S3       | 50                        |
+| S4       | 100                       |
+| S5       | 150                       |
+| S6       | 200                       |
+| S7       | 250                       |

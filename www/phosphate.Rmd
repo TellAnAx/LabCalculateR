@@ -1,0 +1,249 @@
+---
+title: "Ortho-Phosphate BLUVISION® Water"
+author: "Tellbüscher Anil Axel MSc."
+date: "Issue 190325/99425691"
+output: html_document
+---
+
+# General Method
+
+## PRINCIPLE
+
+The automated procedure for the determination of Phosphate is based on the following reaction; ammonium heptamolybdate and potassium antimony(III) oxide tartrate react in an acid medium with diluted solutions of phosphorous to form an antimony-phospho-molybdic acid complex. This complex is reduced to an intensely blue-colored complex by L(+)-ascorbic acid. The color is proportional to the phosphorous concentration. The color is measured at 880 nm.
+
+## LABORATORY FACILITIES
+
+1. Maximum power consumption depending on the analyzer configuration, 2000 VA. Check voltage at the back of the instrument before installation.
+2. Facilities for chemical wastes. Check environmental regulations for proper disposal of waste.
+
+## PROCEDURE SAMPLE PREPARATION
+
+1. Samples should be collected in glass bottles. All bottles must be thoroughly cleaned and rinsed with hot diluted HCl and several times with reagent water. Never use commercial detergents containing phosphates for cleaning glassware. Volume collected should be sufficient to ensure a representative sample, allow for replicate analysis (if required), and minimize waste disposal.
+2. Samples must be preserved with H2SO4 to a pH <2 and cooled to 4°C at the time of collection.
+3. Samples should be analyzed as soon as possible after collection. If storage is required, preserved samples are maintained at 4°C and may be held for up to 28 days.
+
+## INTERFERENCES
+
+Arsenic might interfere, as well as high concentrations of silicate, chromium, nitrite, sulfide, iron, fluoride, and oxidizing compounds.
+
+# REAGENTS
+
+**Remark:** All reagents and standards must be prepared in polyethylene and stored in polyethylene bottles to prevent silicate interference from the glass.
+
+## A. Sulfuric acid solution (2.5M) (500 ml)
+
+**Required chemicals:**
+
+- Sulfuric acid ................ 70 ml. H2SO4 (95-97%)
+- Distilled water H2O
+
+**Preparation:**
+
+Slowly add the sulfuric acid to ≈ 400 ml of distilled water. Cool down to room temperature. Fill up to 500 ml with distilled water and mix.
+
+**Note:**
+
+Solution is stable for three months at room temperature.
+
+## B. Antimony solution (100 ml)
+
+**Required chemicals:**
+
+- Potassium antimony (III) oxide tartrate .......... 320 mg. K2(SbO)2C8H4O10.3H2O
+- Distilled water H2O
+
+**Preparation:**
+
+Dissolve the potassium antimony (III) oxide tartrate in ≈ 80 ml of distilled water. Fill up to 100 ml with distilled water and mix.
+
+**Note:**
+
+Solution is stable for one month in a polyethylene bottle at 2 – 8 °C.
+
+## C. Heptamolybdate solution (100 ml)
+
+**Required chemicals:**
+
+- Ammonium heptamolybdate ............ 4 g. (NH4)6Mo7O24.4H2O
+- Distilled water H2O
+
+**Preparation:**
+
+Dissolve the ammonium heptamolybdate in ≈ 80 ml of distilled water. Fill up to 100 ml with distilled water and mix.
+
+**Note:**
+
+Solution is stable for one month in a polyethylene bottle at 2 – 8 °C. **Never** use metal spoons for the ammonium heptamolybdate.
+
+## R1. Mix reagent
+
+**Required chemicals:**
+
+- Sulfuric acid solution (2.5M) .......... 35 ml. (Reagent A)
+- Antimony solution .... 3.5 ml. (Reagent B)
+- Heptamolybdate solution ................... 10.5 ml. (Reagent C)
+
+**Preparation:**
+
+Create the reagent in the reagent container (50 ml bottle). Mix after each addition.
+
+**Note:**
+
+Solution is stable for one week in a polyethylene bottle at 2 – 8 °C.
+
+## R2. Ascorbic acid solution (250 ml)
+
+**Required chemicals:**
+
+- L(+)-Ascorbic acid ......... 4.5 g. C6H8O6
+- Distilled water H2O
+
+**Preparation:**
+
+Dissolve the L(+)-ascorbic acid in ≈ 200 ml distilled water. Fill up to 250 ml with distilled water and mix.
+
+**Note:**
+
+Solution is stable for one week in a dark polyethylene bottle at 2 – 8 °C.
+
+# CATALOGUE NUMBERS REQUIRED CHEMICALS
+
+| Product                     | Supplier and catnr. |
+|-----------------------------|---------------------|
+| Sulfuric acid (95-97%)      | Merck 100731        |
+| Ammonium heptamolybdate tetrahydrate | Merck 101182 |
+| Potassium antimony(III) oxide tartrate hemihydrate | Merck 108092 |
+| L(+)-Ascorbic acid          | VWR PRO 20150.231   |
+| Potassium dihydrogen phosphate | Merck 104873    |
+
+# OPERATIONAL REMARKS AND TROUBLE SHOOTING
+
+1. Persons using this Skalar method should be familiar with normal laboratory practice. This Skalar method does not purport to address all of the safety problems, if any, associated with its use. It is the responsibility of the user to establish appropriate safety and health practices and to ensure compliance with any national regulatory conditions.
+2. The reagent bottles must be rinsed thoroughly with distilled water before refilling with fresh reagents. This is done to remove precipitation of microorganism and other interferences.
+3. Avoid any turbidity in the reagents, filter if necessary.
+4. It is advised to degas the distilled water (to remove the dissolved air) with one of the following procedures:
+    - a. Degas the water with the use of a deaerator (vacuum);
+    - b. Degas the water with a helium or nitrogen gas flow of approximately 20 liter/hour with the aid of a sparger for approximately 15 minutes.
+5. Before starting a new analysis, it is recommended to rinse the diluters to remove any available air bubbles. This can be done by the menu on the BluVision: Tools, Rinse, Flush Diluters. Repeat this procedure if needed.
+6. When a new cannister of distilled water is used flush the diluter to remove the visible air bubbles that’s inside the tubing.
+7. When done with the BluVision it is advised to remove (or close the lids of) the reagents in the sample reagent disk and empty the cuvette waste. Don’t forget to remove the lid before starting a new analysis!
+
+# REFERENCES
+
+1. ISO 15923-1: Water quality - Determination of selected parameters by discrete analysis systems – Part 1: Ammonium, nitrate, nitrite, chloride, orthophosphate, sulfate and silicate with photometric detection
+2. Standard Methods for the determination of water and waste water, 21st edition, 2005, 4500-P E.
+
+# BLUVISION SETTINGS
+
+| Parameter            | Sample | Reagent (R1) | Reagent (R2) |
+|----------------------|--------|--------------|--------------|
+| Measurement point    | ☑      | ☐            | ☑            |
+| Pre-air volume (µl)  | 10     | 10           | 10           |
+| Volume (µl)          | 450    | 56           | 24           |
+| Additional volume (µl)| 20    | 20           | 20           |
+| Pipetted as          | Extra  | Extra        | Extra        |
+| Inside rinsing volume (µl)| 1500 | 1500      | 1500         |
+| Outside rinsing volume (µl)| 3500 | 3500     | 3500         |
+| Reaction time (s)    | 0      | 0            | 600          |
+| Stir time (s)        | 0      | 3            | 3            |
+| Pickup speed (steps) | 5      | 5            | 5            |
+| Dispense speed (steps)| 10    | 10           | 10           |
+
+# OPERATIONAL SETTINGS
+
+1. Wavelength: 880 nm
+2. Reaction type: Colorization
+3. Dilution type: Cuvette
+4. Calibration type: ISO First order (ISO 8466-1)
+5. Working standards
+    - a. Stock concentration: 200 µg P/l
+6. The sensitivity of the highest standard (100 µg P/l) ≈ 0.085 AU.
+
+# STANDARD SOLUTIONS
+
+## Stock solution 1000 mg P/l (1 liter)
+
+**Required chemicals:**
+
+- Potassium dihydrogen phosphate ............... 4.397 g. KH2PO4
+- Distilled water H2O
+
+**Preparation:**
+
+Dissolve the potassium dihydrogen phosphate in ≈ 800 ml of distilled water. Fill up to 1 liter with distilled water and mix.
+
+**Note:**
+
+Solution is stable for one month at room temperature.
+
+## Stock solution 10 mg P/l
+
+Dilute 1 ml stock solution 1000 mg P/l to 100 ml with distilled water.
+
+## Working stock solution 200 µg P/l
+
+Dilute 2 ml stock solution 10 mg P/l to 100 ml with distilled water.
+
+**Note:**
+
+The stock standard is two times higher than the highest standard.
+
+## Working standards
+
+| Standard | Concentration (µg P/l) |
+|----------|-------------------------|
+| S1       | 2                       |
+| S2       | 5                       |
+| S3       | 10                      |
+| S4       | 20                      |
+| S5       | 40                      |
+| S6       | 60                      |
+| S7       | 80                      |
+| S8       | 100                     |
+
+# BLUVISION SETTINGS (0.05 – 5 mg P/l)
+
+| Parameter            | Sample | Reagent (R1) | Reagent (R2) |
+|----------------------|--------|--------------|--------------|
+| Measurement point    | ☑      | ☐            | ☐            |
+| Pre-air volume (µl)  | 10     | 10           | 10           |
+| Volume (µl)          | 90     | 56           | 24           |
+| Additional volume (µl)| 360   | 20           | 20           |
+| Pipetted as          | Water  | Extra        | Extra        |
+| Inside rinsing volume (µl)| 1500 | 1500      | 1500         |
+| Outside rinsing volume (µl)| 3500 | 3500     | 3500         |
+| Reaction time (s)    | 0      | 0            | 600          |
+| Stir time (s)        | 0      | 3            | 3            |
+| Pickup speed (steps) | 5      | 5            | 5            |
+| Dispense speed (steps)| 10    | 10           | 10           |
+
+# OPERATIONAL SETTINGS
+
+1. Wavelength: 880 nm
+2. Reaction type: Colorization
+3. Dilution type: Extra cuvette
+4. Calibration type: ISO First order (ISO 8466-1)
+5. Working standards
+    - a. Stock concentration: 10 mg P/l
+6. The sensitivity of the highest standard (5 mg P/l) ≈ 0.900 AU.
+
+## Working stock solution 10 mg P/l
+
+Dilute 1 ml stock solution 1000 mg P/l to 100 ml with distilled water.
+
+**Note:**
+
+The stock standard is two times higher than the highest standard.
+
+## Working standards
+
+| Standard | Concentration (mg P/l) |
+|----------|-------------------------|
+| S1       | 0.05                    |
+| S2       | 0.25                    |
+| S3       | 0.50                    |
+| S4       | 1.00                    |
+| S5       | 2.00                    |
+| S6       | 3.00                    |
+| S7       | 4.00                    |
+| S8       | 5.00                    |

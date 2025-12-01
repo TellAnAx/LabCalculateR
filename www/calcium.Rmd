@@ -1,0 +1,195 @@
+---
+title: "Calcium BLUVISION® Water"
+author: "Tellbüscher Anil Axel MSc."
+date: "Issue 190325/99425691"
+output: html_document
+---
+
+# General Method
+
+## PRINCIPLE
+
+The automated procedure for the determination of Calcium is based on the following reaction; Calcium ions form a highly coloured complex with arsenazo(III) at neutral pH. The color is proportional to the Calcium concentration and is measured at 660 nm. The addition of 8-hydroxyquinoline removes the interferences of magnesium.
+
+## LABORATORY FACILITIES
+
+1. Maximum power consumption depending on the analyzer configuration, 2000 VA. Check voltage at the back of the instrument before installation.
+2. Facilities for chemical wastes. Check environmental regulations for proper disposal of waste.
+
+## PROCEDURE SAMPLE PREPARATION
+
+1. Use clean vessels for sampling.
+2. Turbidity or particulates interfere with spectrophotometric detection. Using an appropriate filtration apparatus, clarify any samples containing particles by filtering through a 0.45 μm membrane (settlement, centrifugation or dialysis may also be used). To avoid contamination by the filter membrane, discard the first few millilitres of filtrate.
+3. ISO 5667-3 offers guidance on the preparation and storage of samples. The guidance in ISO 5667-3 for preservation of samples for iron, manganese, aluminium, calcium and magnesium recommend acidifying the sample to between pH 1 and 2, but this may not be appropriate for discrete analysis methods where pH is critical, e.g. calcium and manganese. In such cases, it is important to ensure that the buffering capacity of the reaction mixture is not exceeded.
+
+## INTERFERENCES
+
+1. Substances that contain or complex with calcium cause inaccurate results.
+2. Glass tubes often are coated with a residue containing calcium. They should be acid-washed before use. Alternatively, plastic tubes may be used.
+
+# REAGENTS
+
+## R1. 8-Hydroxyquinoline solution (250 ml)
+
+**Required chemicals:**
+
+- Hydrochloric acid .... 6.25 ml. HCl (32%)
+- 8-Hydroxyquinoline .... 1.2 g. C9H7NO
+- Distilled water H2O
+
+**Preparation:**
+
+Dilute the hydrochloric acid in 200 ml distilled water. Dissolve the 8-hydroxyquinoline and fill up to 250ml with distilled water and mix.
+
+**Note:**
+
+Solution is stable for one week at 2 – 8 °C.
+
+## R2. Arsenazo solution (500 ml)
+
+**Required chemicals:**
+
+- Imidazole ..................... 3.4 g. C₃H₄N₂
+- Arsenazo (III) ............. 78 mg. C₂₂H₁₈As₂N₄O₁₄S₂
+- Distilled water H2O
+
+**Preparation:**
+
+Dissolve imidazole in ≈ 400 ml of distilled water. Add arsenazo (III) and dissolve. Fill up to 500 ml with distilled water and mix.
+
+**Note:**
+
+Solution is stable for one week at 2 – 8 °C.
+
+# CATALOGUE NUMBERS REQUIRED CHEMICALS
+
+| Product                     | Supplier and catnr. |
+|-----------------------------|---------------------|
+| Hydrochloric acid (32%)     | Merck 100313        |
+| 8-Hydroxyquinoline          | Merck 820261        |
+| Imidazole                   | Merck 814223        |
+| Arsenazo(III)               | Merck 110107        |
+| Calcium acetate monohydrate | Sigma 402850        |
+
+# OPERATIONAL REMARKS AND TROUBLE SHOOTING
+
+1. Persons using this Skalar method should be familiar with normal laboratory practice. This Skalar method does not purport to address all of the safety problems, if any, associated with its use. It is the responsibility of the user to establish appropriate safety and health practices and to ensure compliance with any national regulatory conditions.
+2. The reagent bottles must be rinsed thoroughly with distilled water before refilling with fresh reagents. This is done to remove precipitation of microorganism and other interferences.
+3. Avoid any turbidity in the reagents, filter if necessary.
+4. It is advised to degas the distilled water (to remove the dissolved air) with one of the following procedures:
+    - a. Degas the water with the use of a deaerator (vacuum);
+    - b. Degas the water with a helium or nitrogen gas flow of approximately 20 liter/hour with the aid of a sparger for approximately 15 minutes.
+5. Before starting a new analysis, it is recommended to rinse the diluters to remove any available air bubbles. This can be done by the menu on the BluVision: Tools, Rinse, Flush Diluters. Repeat this procedure if needed.
+6. When a new cannister of distilled water is used flush the diluter to remove the visible air bubbles that’s inside the tubing.
+7. When done with the BluVision it is advised to remove (or close the lids of) the reagents in the sample reagent disk and empty the cuvette waste. Don’t forget to remove the lid before starting a new analysis!
+
+# REFERENCES
+
+1. ISO/TS 15923-2: Water quality - Determination of selected parameters by discrete analysis systems – Part 2: Chromium(VI), fluoride, total alkalinity, total hardness, calcium, magnesium, iron, iron(II), manganese and aluminium with photometric detection
+2. Standard Methods for the Examination of Water and Wastewater, 21st edition 2005, 1080 Reagent Water
+
+# BLUVISION SETTINGS
+
+| Parameter            | Sample | Reagent (R1) | Reagent (R2) |
+|----------------------|--------|--------------|--------------|
+| Measurement Point    | ☐      | ☐            | ☐            |
+| Pre-air volume (µl)  | 10     | 10           | 10           |
+| Volume (µl)          | 100    | 120          | 450          |
+| Additional volume (µl)| 300   | 20           | 20           |
+| Pipetted as          | Water  | Extra        | Extra        |
+| Inside rinsing volume (µl)| 1500 | 1500      | 1500         |
+| Outside rinsing volume (µl)| 3500 | 3500     | 3500         |
+| Reaction time (s)    | 0      | 0            | 500          |
+| Stir time (s)        | 0      | 3            | 3            |
+| Pickup speed (steps) | 5      | 5            | 5            |
+| Dispense speed (steps)| 10    | 10           | 10           |
+
+# STANDARD SOLUTIONS
+
+## Stock solution 1000 mg Ca/l
+
+**Required chemicals:**
+
+- Calcium acetate monohydrate .......... 3.988 g.
+- Distilled water H2O
+
+**Preparation:**
+
+Dissolve the calcium acetate monohydrate in ≈ 800 ml of distilled water. Fill up to 1 liter with distilled water and mix.
+
+**Note:**
+
+Solution is stable for one month at room temperature.
+
+## Working stock solution 40 mg Ca/l
+
+Dilute 4 ml stock solution 1000 mg Ca/l to 100 ml with distilled water.
+
+**Note:**
+
+The stock standard is two times higher than the highest standard.
+
+## Working standards
+
+| Standard | Concentration (mg Ca/l) |
+|----------|-------------------------|
+| S1       | 1                       |
+| S2       | 2                       |
+| S3       | 4                       |
+| S4       | 8                       |
+| S5       | 12                      |
+| S6       | 16                      |
+| S7       | 20                      |
+
+# BLUVISION SETTINGS (10 – 200 mg Ca/l)
+
+| Parameter            | Sample | Reagent (R1) | Reagent (R2) |
+|----------------------|--------|--------------|--------------|
+| Measurement point    | ☐      | ☐            | ☐            |
+| Pre-air volume (µl)  | 10     | 10           | 10           |
+| Volume (µl)          | 10     | 120          | 450          |
+| Additional volume (µl)| 390   | 20           | 20           |
+| Pipetted as          | Water  | Extra        | Extra        |
+| Inside rinsing volume (µl)| 1500 | 1000      | 1500         |
+| Outside rinsing volume (µl)| 3500 | 3500     | 3500         |
+| Reaction time (s)    | 0      | 0            | 500          |
+| Stir time (s)        | 0      | 3            | 3            |
+| Pickup speed (steps) | 5      | 5            | 5            |
+| Dispense speed (steps)| 10    | 10           | 10           |
+
+# STANDARD SOLUTIONS (10 – 200 mg Ca/l)
+
+## Stock solution 10 000 mg Ca/l
+
+**Required chemicals:**
+
+- Calcium acetate monohydrate .......... 39.88 g.
+- Distilled water H2O
+
+**Preparation:**
+
+Dissolve the calcium acetate monohydrate in ≈ 800 ml of distilled water. Fill up to 1 liter with distilled water and mix.
+
+**Note:**
+
+Solution is stable for one month at room temperature.
+
+## Working stock solution 400 mg Ca/l
+
+Dilute 4 ml stock solution 10 000 mg Ca/l to 100 ml with distilled water.
+
+**Note:**
+
+The stock standard is two times higher than the highest standard.
+
+## Working standards
+
+| Standard | Concentration (mg Ca/l) |
+|----------|-------------------------|
+| S1       | 10                      |
+| S2       | 20                      |
+| S3       | 40                      |
+| S4       | 80                      |
+| S5       | 120                     |
+| S6       | 160                     |
+| S7       | 200                     |
